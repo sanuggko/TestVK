@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="nYv-FN-EUE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Start Screen-->
+        <scene sceneID="ILr-zp-rDR">
+            <objects>
+                <viewController id="tlC-lt-EfZ" customClass="XYZStartScreen" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="70K-5k-xYs"/>
+                        <viewControllerLayoutGuide type="bottom" id="gH7-jG-nTH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9WZ-Y3-zR5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adg-GY-Lk2">
+                                <rect key="frame" x="137" y="269" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="authorizeForceOAuthInApp:" destination="tlC-lt-EfZ" eventType="touchUpInside" id="2ai-zo-e7L"/>
+                                    <segue destination="Gli-Ud-wsg" kind="push" identifier="START" id="nkW-tu-edu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IAA-Ke-s48"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHc-Ue-dEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="608" y="116"/>
+        </scene>
+        <!--View Albums Table View Controller - Albums-->
+        <scene sceneID="N8q-hq-I2T">
+            <objects>
+                <tableViewController id="Gli-Ud-wsg" customClass="VKViewAlbumsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" id="sJH-h0-fRL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Gli-Ud-wsg" id="XWq-m1-jlq"/>
+                            <outlet property="delegate" destination="Gli-Ud-wsg" id="Ctk-S4-Oew"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Albums" id="QfI-sB-v9q"/>
+                    <connections>
+                        <segue destination="Kf4-dx-W7x" kind="push" identifier="toPhotoList" id="I2S-Yb-xC6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="478-Xk-E25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="116"/>
+        </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="BHD-1A-mxV">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Kf4-dx-W7x" customClass="VKPhotoViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Iw9-qa-sCX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2M2-HM-Gi3">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Kf4-dx-W7x" id="7ls-DC-hsi"/>
+                            <outlet property="delegate" destination="Kf4-dx-W7x" id="wvE-jz-x8h"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="fkA-nW-5dY"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Iw9-qa-sCX" id="vtc-v5-YZ7"/>
+                        <segue destination="3Q8-fI-vAj" kind="push" identifier="toPhotoView" id="r4q-aK-FVW"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggw-3w-Cfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1493" y="116"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="flx-DN-5Df">
+            <objects>
+                <viewController id="3Q8-fI-vAj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MVb-FZ-DdD"/>
+                        <viewControllerLayoutGuide type="bottom" id="P72-Dd-NgK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OUU-U2-wzc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4DQ-p9-cgs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1HY-7f-4r7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pYz-lA-gMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VLa-lc-JJZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nYv-FN-EUE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WDk-5k-4cw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="AEi-fA-9ad">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="tlC-lt-EfZ" kind="relationship" relationship="rootViewController" id="sww-0S-1TP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Abs-Rt-BW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="116"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

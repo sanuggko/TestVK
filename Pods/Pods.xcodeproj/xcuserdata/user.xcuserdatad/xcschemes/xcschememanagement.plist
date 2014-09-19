@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-AFNetworking-MUResponseSerializer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-NSObject-MUJSONMapping.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VK-ios-sdk.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>00F4E39A543A4F30A04E58F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A409BBCC5F1467DA4DABB87</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9019192073DD49FCAD902339</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>97C72FBA4C5F4C2AA334355B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC8EA73188814B4B91B4F23C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
