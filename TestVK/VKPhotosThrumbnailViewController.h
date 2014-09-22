@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "VKAlbumModel.h"
 
-@interface VKPhotoViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
-@property (nonatomic, strong) VKAlbumModel* currentAlbum;
+@interface VKPhotosThrumbnailViewController : UICollectionViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (nonatomic, strong) VKAlbumModel *currentAlbum;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
-
 
 @end

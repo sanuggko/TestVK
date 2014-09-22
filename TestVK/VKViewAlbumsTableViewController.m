@@ -10,17 +10,18 @@
 #import <VKSdk.h>
 #import <AFNetworking.h>
 #import "VKLoader.h"
-#import "XYZAppDelegate.h"
+#import "VKAppDelegate.h"
 #import "UIKit+AFNetworking.h"
-#import "CustomViewCell.h"
+#import "VKCustomAlbumViewCell.h"
 #import "VKAlbumModel.h"
 #import "VKPhotoModel.h"
-#import "VKPhotoViewController.h"
+#import "VKPhotosThrumbnailViewController.h"
 
 @interface VKViewAlbumsTableViewController ()
 
-@property NSMutableArray* albumsNamesArray;
-@property VKAlbumModel* vkAlbums;
+@property NSMutableArray *albumsNameArray;
+@property VKAlbumModel *vkAlbum;
+
 @end
 
 @implementation VKViewAlbumsTableViewController
@@ -28,61 +29,63 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStyleDone target:self action:@selector(logout:)];
-    self.albumsNamesArray = [[NSMutableArray alloc] init];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
+                                                                             style:UIBarButtonItemStyleDone
+                                                                            target:self
+                                                                            action:@selector(logout:)];
+    self.albumsNameArray = [[NSMutableArray alloc] init];
     
-    UINib * nib = [UINib nibWithNibName:NSStringFromClass([CustomViewCell class])
+    UINib * nib = [UINib nibWithNibName:NSStringFromClass([VKCustomAlbumViewCell class])
                                  bundle:nil];
     [self.tableView registerNib:nib
-         forCellReuseIdentifier:NSStringFromClass([CustomViewCell class])];
+         forCellReuseIdentifier:NSStringFromClass([VKCustomAlbumViewCell class])];
     [self loadAlbums];
 }
 
 - (void)loadAlbums
 {
-    [VKLoader loadAlbumsWithSuccessBlock:^(NSArray *albums) {
-        [self.albumsNamesArray addObjectsFromArray:albums];
+    [VKLoader loadAlbumsWithSuccessBlock:^(NSArray *albums)
+    {
+        [self.albumsNameArray addObjectsFromArray:albums];
         [self.tableView reloadData];
     }
-     failure:^(NSError *error) {
-        
+                                 failure:^(NSError *error)
+    {
+        NSLog(@"Error in loadAlbums");
     }];
-
 }
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
-  
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.albumsNamesArray count];
-  
+    return [self.albumsNameArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	CustomViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([CustomViewCell class]) forIndexPath:indexPath];
+	VKCustomAlbumViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([VKCustomAlbumViewCell class]) forIndexPath:indexPath];
 
-    [cell updateWithAlbum:[self.albumsNamesArray objectAtIndex:indexPath.row]];
+    [cell updateWithAlbum:[self.albumsNameArray objectAtIndex:indexPath.row]];
     return cell;
 }
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-        [self performSegueWithIdentifier:@"toPhotoList" sender:self];
+    [self performSegueWithIdentifier:@"toPhotoList" sender:self];
 }
 
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-   VKPhotoViewController* vkPhotoVC = segue.destinationViewController;
-    NSIndexPath * selectedPath = [self.tableView indexPathForSelectedRow];
-    vkPhotoVC.currentAlbum = [self.albumsNamesArray objectAtIndex:selectedPath.row];
+    VKPhotosThrumbnailViewController* photosThrumbnailViewController = segue.destinationViewController;
+    NSIndexPath *selectedPath = [self.tableView indexPathForSelectedRow];
+    photosThrumbnailViewController.currentAlbum = [self.albumsNameArray objectAtIndex:selectedPath.row];
 }
 
-- (void) logout:(id) sender {
+- (void)logout:(id) sender {
     [VKSdk forceLogout];
     [self.navigationController popToRootViewControllerAnimated:YES];
 }

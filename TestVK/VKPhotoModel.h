@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface VKPhotoModel : NSObject
-@property (nonatomic, strong) NSURL* urlOfSmallPhoto;
-@property (nonatomic, strong) NSURL* urlOfBigPhoto;
+
+@property (nonatomic, strong) NSURL *urlOfSmallPhoto;
+@property (nonatomic, strong) NSURL *urlOfBigPhoto;
+
 @end

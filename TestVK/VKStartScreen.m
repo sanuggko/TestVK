@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 MLSDev. All rights reserved.
 //
 
-#import "XYZStartScreen.h"
+#import "VKStartScreen.h"
 #import <VKSdk.h>
 
 static NSString *const TOKEN_KEY = @"my_application_access_token";
@@ -14,7 +14,7 @@ static NSString *const SEGUE_ID = @"START";
 static NSArray  * SCOPE = nil;
 
 
-@implementation XYZStartScreen
+@implementation VKStartScreen
 
 
 

@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "VKPhotoModel.h"
 #import "UIKit+AFNetworking.h"
+
 @interface PhotoViewController : UIViewController <UIScrollViewDelegate>
-@property (nonatomic, strong) VKPhotoModel* photo;
+
+@property (nonatomic, strong) VKPhotoModel *currentPhoto;
 @property (weak, nonatomic) IBOutlet UIImageView *photoView;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;

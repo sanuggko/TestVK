@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "VKPhotoModel.h"
-@interface CustomPhotoCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *thumbnailPhoto;
+
+@interface VKCustomPhotoThumbnailViewCell : UICollectionViewCell
+
+@property (weak, nonatomic) IBOutlet UIImageView *photoThumbnail;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
-- (void) updatePhotoView:(VKPhotoModel*) photo;
--(void) setPhotoFromURL:(NSURL*)urls;
+- (void)updatePhotoView:(VKPhotoModel *) currentPhoto;
+- (void)setPhotoFromURL:(NSURL *) urlOfPhoto;
+
 @end

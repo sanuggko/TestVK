@@ -10,13 +10,13 @@
 #import "UIKit+AFNetworking.h"
 #import "VKAlbumModel.h"
 
-@interface CustomViewCell : UITableViewCell
+@interface VKCustomAlbumViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *customLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *albumImageView;
-
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+@property (weak, nonatomic) IBOutlet UILabel *customLabel;
 
--(void)updateWithAlbum:(VKAlbumModel *)album;
+
+- (void)updateWithAlbum:(VKAlbumModel *)vkAlbum;
 
 @end

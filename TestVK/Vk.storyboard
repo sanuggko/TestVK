@@ -7,7 +7,7 @@
         <!--Start Screen-->
         <scene sceneID="ILr-zp-rDR">
             <objects>
-                <viewController id="tlC-lt-EfZ" customClass="XYZStartScreen" sceneMemberID="viewController">
+                <viewController id="tlC-lt-EfZ" customClass="VKStartScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9WZ-Y3-zR5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,10 +54,10 @@
             </objects>
             <point key="canvasLocation" x="1109" y="116"/>
         </scene>
-        <!--Photo View Controller-->
+        <!--Photos Thrumbnail View Controller-->
         <scene sceneID="BHD-1A-mxV">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Kf4-dx-W7x" customClass="VKPhotoViewController" sceneMemberID="viewController">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Kf4-dx-W7x" customClass="VKPhotosThrumbnailViewController" sceneMemberID="viewController">
                     <collectionView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="568" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="Iw9-qa-sCX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface VKAlbumModel : NSObject
-@property (nonatomic, strong) NSString* namesOfAlbum;
-@property (nonatomic, strong) NSURL* urls;
-@property (nonatomic, strong) NSString* albumId;
+
+@property (nonatomic, strong) NSString *nameOfAlbum;
+@property (nonatomic, strong) NSURL *urlOfAlbumThumbnail;
+@property (nonatomic, strong) NSString *albumId;
+
 @end

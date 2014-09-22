@@ -10,7 +10,6 @@
 
 @interface VKLoader : NSObject
 
-
 +(void)loadAlbumsWithSuccessBlock:(void(^)(NSArray * albums))success
                           failure:(void(^)(NSError * error))failure;
 

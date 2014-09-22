@@ -1,5 +1,5 @@
 //
-//  XYZStartScreen.h
+//  XYZAppDelegate.h
 //  TestVK
 //
 //  Created by user on 11.09.14.
@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <VKSdk.h>
 
-@interface XYZStartScreen : UIViewController <VKSdkDelegate>
+@interface VKAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+
 
 @end

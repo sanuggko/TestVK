@@ -14,7 +14,7 @@
 		CE3E0FC319C1C0230012159B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FC219C1C0230012159B /* CoreData.framework */; };
 		CE3E0FC919C1C0230012159B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FC719C1C0230012159B /* InfoPlist.strings */; };
 		CE3E0FCB19C1C0230012159B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FCA19C1C0230012159B /* main.m */; };
-		CE3E0FCF19C1C0230012159B /* XYZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FCE19C1C0230012159B /* XYZAppDelegate.m */; };
+		CE3E0FCF19C1C0230012159B /* VKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FCE19C1C0230012159B /* VKAppDelegate.m */; };
 		CE3E0FD219C1C0230012159B /* TestVK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FD019C1C0230012159B /* TestVK.xcdatamodeld */; };
 		CE3E0FD419C1C0230012159B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FD319C1C0230012159B /* Images.xcassets */; };
 		CE3E0FDB19C1C0230012159B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FDA19C1C0230012159B /* XCTest.framework */; };
@@ -23,18 +23,18 @@
 		CE3E0FDE19C1C0230012159B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FC219C1C0230012159B /* CoreData.framework */; };
 		CE3E0FE619C1C0230012159B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FE419C1C0230012159B /* InfoPlist.strings */; };
 		CE3E0FE819C1C0230012159B /* TestVKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FE719C1C0230012159B /* TestVKTests.m */; };
-		CE3E0FF319C1C1010012159B /* XYZStartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FF219C1C1010012159B /* XYZStartScreen.m */; };
+		CE3E0FF319C1C1010012159B /* VKStartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FF219C1C1010012159B /* VKStartScreen.m */; };
 		CE9D781F19C32F9C009654F8 /* VKLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D781E19C32F9C009654F8 /* VKLoader.m */; };
 		CEA0E3B219CAEF5F003D7749 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */; };
 		CEA0E3B619CAFCD3003D7749 /* Vk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */; };
-		CEA17A7D19C97ED100B2F3C8 /* VKPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A7C19C97ED100B2F3C8 /* VKPhotoViewController.m */; };
+		CEA17A7D19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A7C19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m */; };
 		CEA17A8419C9A6DC00B2F3C8 /* VKPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A8319C9A6DC00B2F3C8 /* VKPhotoModel.m */; };
-		CEA17A8619C9C1DD00B2F3C8 /* CustomPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA17A8519C9C1DD00B2F3C8 /* CustomPhotoCell.xib */; };
-		CEA17A8C19C9C2C800B2F3C8 /* CustomPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A8B19C9C2C800B2F3C8 /* CustomPhotoCell.m */; };
+		CEA17A8619C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA17A8519C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib */; };
+		CEA17A8C19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A8B19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m */; };
 		CEA4D15A19C6BD9700AC3939 /* VKViewAlbumsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA4D15919C6BD9700AC3939 /* VKViewAlbumsTableViewController.m */; };
-		CEA71E7F19C81D7800D86AA8 /* CustomViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA71E7E19C81D7800D86AA8 /* CustomViewCell.m */; };
+		CEA4F48019D05EC400887D66 /* VKCustomAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA4F47F19D05EC400887D66 /* VKCustomAlbumViewCell.xib */; };
+		CEA71E7F19C81D7800D86AA8 /* VKCustomAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */; };
 		CEA71E8319C8612700D86AA8 /* VKAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */; };
-		CEA71E8519C87B1F00D86AA8 /* CustomViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA71E8419C87B1F00D86AA8 /* CustomViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +59,8 @@
 		CE3E0FC819C1C0230012159B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE3E0FCA19C1C0230012159B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE3E0FCC19C1C0230012159B /* TestVK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestVK-Prefix.pch"; sourceTree = "<group>"; };
-		CE3E0FCD19C1C0230012159B /* XYZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYZAppDelegate.h; sourceTree = "<group>"; };
-		CE3E0FCE19C1C0230012159B /* XYZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYZAppDelegate.m; sourceTree = "<group>"; };
+		CE3E0FCD19C1C0230012159B /* VKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKAppDelegate.h; sourceTree = "<group>"; };
+		CE3E0FCE19C1C0230012159B /* VKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKAppDelegate.m; sourceTree = "<group>"; };
 		CE3E0FD119C1C0230012159B /* TestVK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestVK.xcdatamodel; sourceTree = "<group>"; };
 		CE3E0FD319C1C0230012159B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE3E0FD919C1C0230012159B /* TestVKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,27 +68,27 @@
 		CE3E0FE319C1C0230012159B /* TestVKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestVKTests-Info.plist"; sourceTree = "<group>"; };
 		CE3E0FE519C1C0230012159B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE3E0FE719C1C0230012159B /* TestVKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVKTests.m; sourceTree = "<group>"; };
-		CE3E0FF119C1C1010012159B /* XYZStartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZStartScreen.h; sourceTree = "<group>"; };
-		CE3E0FF219C1C1010012159B /* XYZStartScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZStartScreen.m; sourceTree = "<group>"; };
+		CE3E0FF119C1C1010012159B /* VKStartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKStartScreen.h; sourceTree = "<group>"; };
+		CE3E0FF219C1C1010012159B /* VKStartScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKStartScreen.m; sourceTree = "<group>"; };
 		CE9D781D19C32F9C009654F8 /* VKLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoader.h; sourceTree = "<group>"; };
 		CE9D781E19C32F9C009654F8 /* VKLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoader.m; sourceTree = "<group>"; };
 		CEA0E3B019CAEF5F003D7749 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Vk.storyboard; sourceTree = "<group>"; };
-		CEA17A7B19C97ED100B2F3C8 /* VKPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPhotoViewController.h; sourceTree = "<group>"; };
-		CEA17A7C19C97ED100B2F3C8 /* VKPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPhotoViewController.m; sourceTree = "<group>"; };
+		CEA17A7B19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPhotosThrumbnailViewController.h; sourceTree = "<group>"; };
+		CEA17A7C19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPhotosThrumbnailViewController.m; sourceTree = "<group>"; };
 		CEA17A8219C9A6DC00B2F3C8 /* VKPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPhotoModel.h; sourceTree = "<group>"; };
 		CEA17A8319C9A6DC00B2F3C8 /* VKPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPhotoModel.m; sourceTree = "<group>"; };
-		CEA17A8519C9C1DD00B2F3C8 /* CustomPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomPhotoCell.xib; sourceTree = "<group>"; };
-		CEA17A8A19C9C2C800B2F3C8 /* CustomPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPhotoCell.h; sourceTree = "<group>"; };
-		CEA17A8B19C9C2C800B2F3C8 /* CustomPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPhotoCell.m; sourceTree = "<group>"; };
+		CEA17A8519C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VKCustomPhotoThumbnailViewCell.xib; sourceTree = "<group>"; };
+		CEA17A8A19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCustomPhotoThumbnailViewCell.h; sourceTree = "<group>"; };
+		CEA17A8B19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCustomPhotoThumbnailViewCell.m; sourceTree = "<group>"; };
 		CEA4D15819C6BD9700AC3939 /* VKViewAlbumsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKViewAlbumsTableViewController.h; sourceTree = "<group>"; };
 		CEA4D15919C6BD9700AC3939 /* VKViewAlbumsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKViewAlbumsTableViewController.m; sourceTree = "<group>"; };
-		CEA71E7D19C81D7800D86AA8 /* CustomViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewCell.h; sourceTree = "<group>"; };
-		CEA71E7E19C81D7800D86AA8 /* CustomViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewCell.m; sourceTree = "<group>"; };
+		CEA4F47F19D05EC400887D66 /* VKCustomAlbumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VKCustomAlbumViewCell.xib; sourceTree = "<group>"; };
+		CEA71E7D19C81D7800D86AA8 /* VKCustomAlbumViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKCustomAlbumViewCell.h; sourceTree = "<group>"; };
+		CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCustomAlbumViewCell.m; sourceTree = "<group>"; };
 		CEA71E8119C8612700D86AA8 /* VKAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAlbumModel.h; sourceTree = "<group>"; };
 		CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAlbumModel.m; sourceTree = "<group>"; };
-		CEA71E8419C87B1F00D86AA8 /* CustomViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,18 +154,9 @@
 		CE3E0FC419C1C0230012159B /* TestVK */ = {
 			isa = PBXGroup;
 			children = (
-				CE3E0FCD19C1C0230012159B /* XYZAppDelegate.h */,
-				CE3E0FCE19C1C0230012159B /* XYZAppDelegate.m */,
-				CEA17A7E19C980FA00B2F3C8 /* VKAlbums */,
-				CE3E0FF119C1C1010012159B /* XYZStartScreen.h */,
-				CE3E0FF219C1C1010012159B /* XYZStartScreen.m */,
-				CEA17A8019C9812B00B2F3C8 /* VKPhoto */,
+				CEA17A7E19C980FA00B2F3C8 /* VKAlbumsViewer */,
+				CEA17A8019C9812B00B2F3C8 /* VKPhotoViewer */,
 				CEA0E3AF19CAEF1C003D7749 /* PhotoView */,
-				CE9D781D19C32F9C009654F8 /* VKLoader.h */,
-				CE9D781E19C32F9C009654F8 /* VKLoader.m */,
-				CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */,
-				CE3E0FD319C1C0230012159B /* Images.xcassets */,
-				CE3E0FD019C1C0230012159B /* TestVK.xcdatamodeld */,
 				CE3E0FC519C1C0230012159B /* Supporting Files */,
 			);
 			path = TestVK;
@@ -174,6 +165,15 @@
 		CE3E0FC519C1C0230012159B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE3E0FD019C1C0230012159B /* TestVK.xcdatamodeld */,
+				CE3E0FD319C1C0230012159B /* Images.xcassets */,
+				CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */,
+				CE9D781D19C32F9C009654F8 /* VKLoader.h */,
+				CE9D781E19C32F9C009654F8 /* VKLoader.m */,
+				CE3E0FCD19C1C0230012159B /* VKAppDelegate.h */,
+				CE3E0FCE19C1C0230012159B /* VKAppDelegate.m */,
+				CE3E0FF119C1C1010012159B /* VKStartScreen.h */,
+				CE3E0FF219C1C1010012159B /* VKStartScreen.m */,
 				CE3E0FC619C1C0230012159B /* TestVK-Info.plist */,
 				CE3E0FC719C1C0230012159B /* InfoPlist.strings */,
 				CE3E0FCA19C1C0230012159B /* main.m */,
@@ -209,32 +209,32 @@
 			name = PhotoView;
 			sourceTree = "<group>";
 		};
-		CEA17A7E19C980FA00B2F3C8 /* VKAlbums */ = {
+		CEA17A7E19C980FA00B2F3C8 /* VKAlbumsViewer */ = {
 			isa = PBXGroup;
 			children = (
 				CEA4D15819C6BD9700AC3939 /* VKViewAlbumsTableViewController.h */,
 				CEA4D15919C6BD9700AC3939 /* VKViewAlbumsTableViewController.m */,
-				CEA71E7D19C81D7800D86AA8 /* CustomViewCell.h */,
-				CEA71E7E19C81D7800D86AA8 /* CustomViewCell.m */,
-				CEA71E8419C87B1F00D86AA8 /* CustomViewCell.xib */,
+				CEA71E7D19C81D7800D86AA8 /* VKCustomAlbumViewCell.h */,
+				CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */,
+				CEA4F47F19D05EC400887D66 /* VKCustomAlbumViewCell.xib */,
 				CEA71E8119C8612700D86AA8 /* VKAlbumModel.h */,
 				CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */,
 			);
-			name = VKAlbums;
+			name = VKAlbumsViewer;
 			sourceTree = "<group>";
 		};
-		CEA17A8019C9812B00B2F3C8 /* VKPhoto */ = {
+		CEA17A8019C9812B00B2F3C8 /* VKPhotoViewer */ = {
 			isa = PBXGroup;
 			children = (
-				CEA17A7B19C97ED100B2F3C8 /* VKPhotoViewController.h */,
-				CEA17A7C19C97ED100B2F3C8 /* VKPhotoViewController.m */,
-				CEA17A8519C9C1DD00B2F3C8 /* CustomPhotoCell.xib */,
-				CEA17A8A19C9C2C800B2F3C8 /* CustomPhotoCell.h */,
-				CEA17A8B19C9C2C800B2F3C8 /* CustomPhotoCell.m */,
+				CEA17A7B19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.h */,
+				CEA17A7C19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m */,
+				CEA17A8519C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib */,
+				CEA17A8A19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.h */,
+				CEA17A8B19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m */,
 				CEA17A8219C9A6DC00B2F3C8 /* VKPhotoModel.h */,
 				CEA17A8319C9A6DC00B2F3C8 /* VKPhotoModel.m */,
 			);
-			name = VKPhoto;
+			name = VKPhotoViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA4F48019D05EC400887D66 /* VKCustomAlbumViewCell.xib in Resources */,
 				CE3E0FC919C1C0230012159B /* InfoPlist.strings in Resources */,
-				CEA71E8519C87B1F00D86AA8 /* CustomViewCell.xib in Resources */,
 				CE3E0FD419C1C0230012159B /* Images.xcassets in Resources */,
-				CEA17A8619C9C1DD00B2F3C8 /* CustomPhotoCell.xib in Resources */,
+				CEA17A8619C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib in Resources */,
 				CEA0E3B619CAFCD3003D7749 /* Vk.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,18 +371,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3E0FF319C1C1010012159B /* XYZStartScreen.m in Sources */,
+				CE3E0FF319C1C1010012159B /* VKStartScreen.m in Sources */,
 				CEA4D15A19C6BD9700AC3939 /* VKViewAlbumsTableViewController.m in Sources */,
-				CEA71E7F19C81D7800D86AA8 /* CustomViewCell.m in Sources */,
+				CEA71E7F19C81D7800D86AA8 /* VKCustomAlbumViewCell.m in Sources */,
 				CEA0E3B219CAEF5F003D7749 /* PhotoViewController.m in Sources */,
 				CE3E0FD219C1C0230012159B /* TestVK.xcdatamodeld in Sources */,
-				CE3E0FCF19C1C0230012159B /* XYZAppDelegate.m in Sources */,
+				CE3E0FCF19C1C0230012159B /* VKAppDelegate.m in Sources */,
 				CE9D781F19C32F9C009654F8 /* VKLoader.m in Sources */,
-				CEA17A7D19C97ED100B2F3C8 /* VKPhotoViewController.m in Sources */,
+				CEA17A7D19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m in Sources */,
 				CEA71E8319C8612700D86AA8 /* VKAlbumModel.m in Sources */,
 				CE3E0FCB19C1C0230012159B /* main.m in Sources */,
 				CEA17A8419C9A6DC00B2F3C8 /* VKPhotoModel.m in Sources */,
-				CEA17A8C19C9C2C800B2F3C8 /* CustomPhotoCell.m in Sources */,
+				CEA17A8C19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

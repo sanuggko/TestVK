@@ -30,8 +30,8 @@
         for (int i =0; i < [items count]; i++){
             NSDictionary* temp = items[i];
             VKAlbumModel* vkAlbums = [[VKAlbumModel alloc]init];
-            vkAlbums.namesOfAlbum = [temp valueForKey:@"title"];
-            vkAlbums.urls = [NSURL URLWithString:[temp valueForKey:@"thumb_src"]];
+            vkAlbums.nameOfAlbum = [temp valueForKey:@"title"];
+            vkAlbums.urlOfAlbumThumbnail = [NSURL URLWithString:[temp valueForKey:@"thumb_src"]];
             vkAlbums.albumId = [temp valueForKey:@"id"];
             [albums addObject:vkAlbums];
         }

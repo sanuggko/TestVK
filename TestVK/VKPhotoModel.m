@@ -8,11 +8,6 @@
 
 #import "VKPhotoModel.h"
 
-@interface VKPhotoModel ()
-
-@end
-
 @implementation VKPhotoModel
-
 
 @end

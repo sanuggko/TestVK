@@ -16,34 +16,35 @@
 
 @implementation PhotoViewController
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSURL* url = self.photo.urlOfBigPhoto;
+    NSURL* url = self.currentPhoto.urlOfBigPhoto;
     [self.photoView setImageWithURL:url];
-    [self.scrollView setScrollEnabled:YES];
     [self.scrollView setMaximumZoomScale:3.0f];
     [self.scrollView setClipsToBounds:YES];
     [self.spinner stopAnimating];
 }
 
--(void) setImageWithURL: (NSURL*) url
+- (void)setImageWithURL:(NSURL *) url
 {
     NSURLRequest* imageReq = [NSURLRequest requestWithURL:url];
-    [self.photoView setImageWithURLRequest:imageReq placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image) {
-        
+    [self.photoView setImageWithURLRequest:imageReq
+                          placeholderImage:nil
+                                   success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
+    {
         self.photoView.image = image;
-        
-        
-    } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+    }
+                                   failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error)
+    {
        [self.spinner stopAnimating];
         NSLog(@"error");
     }];
 }
 
--(UIView*) viewForZoomingInScrollView:(UIScrollView *)scrollView
+- (UIView *) viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
     return self.photoView;
 }
+
 @end
