@@ -11,8 +11,14 @@
 #import "VKAlbumModel.h"
 #import "VKPhotoModel.h"
 
+@interface VKLoader()
+
+@end
+
 @implementation VKLoader
 
+static NSString *const VK_API_NEED_SYSTEM          = @"need_system";
+static NSString *const VK_API_NO_SERVICE_ALBUMS    = @"no_service_albums";
 
 +(void)loadAlbumsWithSuccessBlock:(void (^)(NSArray *))success
                           failure:(void (^)(NSError *))failure
@@ -20,7 +26,7 @@
     
     VKRequest* req = [VKRequest requestWithMethod:@"photos.getAlbums"
                                     andParameters:@{VK_API_PHOTO:@1,VK_API_NEED_SYSTEM:@1, VK_API_NEED_COVERS: @1}
-                                    andHttpMethod:@"GET"]; // параметры VK_API_NEED_SYSTEM и VK_API_NEED_COVERS добавлялись вручную, так в VKSDK их не было
+                                    andHttpMethod:@"GET"]; 
     
     [req executeWithResultBlock:^(VKResponse *response) {
         NSMutableArray* albums = [[NSMutableArray alloc] init];
