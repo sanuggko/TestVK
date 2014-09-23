@@ -14,5 +14,5 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-
+*.xcworkspace
 /Pods
