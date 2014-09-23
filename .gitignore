@@ -15,4 +15,5 @@ DerivedData
 *.ipa
 *.xcuserstate
 *.xcworkspace
+*.DC_Store
 /Pods
