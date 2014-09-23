@@ -30,11 +30,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TestVK/VKLoader.m"
-            timestampString = "432816098.15409"
+            timestampString = "433149945.99726"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "+loadPhotosWithIdOfAlbum:andWithSuccessBlock:failure:"
             landmarkType = "5">
          </BreakpointContent>

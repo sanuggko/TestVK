@@ -8,7 +8,6 @@
 
 #import "VKLoader.h"
 #import <VKSdk.h>
-#import "AlbumModel.h"
 #import "VKAlbumModel.h"
 #import "VKPhotoModel.h"
 
