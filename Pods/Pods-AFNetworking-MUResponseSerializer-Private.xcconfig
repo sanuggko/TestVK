@@ -1,5 +1,0 @@
-#include "Pods-AFNetworking-MUResponseSerializer.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFNetworking-MUResponseSerializer" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/AFNetworking-MUResponseSerializer" "${PODS_ROOT}/Headers/NSObject-MUJSONMapping" "${PODS_ROOT}/Headers/VK-ios-sdk"
-OTHER_LDFLAGS = -ObjC
-PODS_ROOT = ${SRCROOT}
