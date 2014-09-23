@@ -19,6 +19,7 @@
 
 static NSString *const VK_API_NEED_SYSTEM          = @"need_system";
 static NSString *const VK_API_NO_SERVICE_ALBUMS    = @"no_service_albums";
+static NSString *const VK_API_NEED_COVERS    = @"need_covers";
 
 +(void)loadAlbumsWithSuccessBlock:(void (^)(NSArray *))success
                           failure:(void (^)(NSError *))failure
@@ -26,7 +27,7 @@ static NSString *const VK_API_NO_SERVICE_ALBUMS    = @"no_service_albums";
     
     VKRequest* req = [VKRequest requestWithMethod:@"photos.getAlbums"
                                     andParameters:@{VK_API_PHOTO:@1,VK_API_NEED_SYSTEM:@1, VK_API_NEED_COVERS: @1}
-                                    andHttpMethod:@"GET"]; 
+                                    andHttpMethod:@"GET"];
     
     [req executeWithResultBlock:^(VKResponse *response) {
         NSMutableArray* albums = [[NSMutableArray alloc] init];
@@ -40,7 +41,7 @@ static NSString *const VK_API_NO_SERVICE_ALBUMS    = @"no_service_albums";
             vkAlbums.albumId = [temp valueForKey:@"id"];
             [albums addObject:vkAlbums];
         }
-        success(albums);        
+        success(albums);
     } errorBlock:^(NSError *error) {
         if (failure)
         {
@@ -71,7 +72,7 @@ static NSString *const VK_API_NO_SERVICE_ALBUMS    = @"no_service_albums";
             failure(error);
         }
     }];
-
+    
 }
 
 @end
