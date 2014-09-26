@@ -11,14 +11,14 @@
 #import "VKAlbumModel.h"
 #import "VKPhotoModel.h"
 
-@interface TestVKTests : XCTestCase
+@interface TestAlbumModel : XCTestCase
 
 @property (nonatomic, strong) NSDictionary *tempDictionary;
 @property (nonatomic, strong) VKAlbumModel *vkAlbum;
 
 @end
 
-@implementation TestVKTests
+@implementation TestAlbumModel
 
 - (void)setUp
 {
@@ -27,7 +27,7 @@
     id parsedObject = [ficture jsonObjectFromFileNamed:fileName];
     self.tempDictionary = parsedObject;
     self.vkAlbum = [[VKAlbumModel alloc]initWithProperties:self.tempDictionary];
-
+    
 }
 
 - (void)tearDown
