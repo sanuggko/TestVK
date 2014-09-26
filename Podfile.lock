@@ -23,16 +23,19 @@ PODS:
   - AFNetworking/UIKit (2.4.1):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - Expecta (0.3.1)
   - NSObject-MUJSONMapping (1.0.0)
   - VK-ios-sdk (1.0.8.3)
 
 DEPENDENCIES:
   - AFNetworking-MUResponseSerializer (~> 1.0)
+  - Expecta
   - VK-ios-sdk (~> 1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 0aabc6fae66d6e5d039eeb21c315843c7aae51ab
   AFNetworking-MUResponseSerializer: 0a5922fcae7a102e872be9b8da841970f1dc6cb1
+  Expecta: 03aabd0a89d8dea843baecb19a7fd7466a69a31d
   NSObject-MUJSONMapping: f9d7d686ebda20f9613fb05c4b8d006bc0e8d7f2
   VK-ios-sdk: 4f4b0f004e2ebbaa509b9c92c89cced4744c0e71
 

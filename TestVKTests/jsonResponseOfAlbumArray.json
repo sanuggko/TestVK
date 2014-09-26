@@ -1,0 +1,55 @@
+{
+    "items" :
+  [
+   {
+   "id" : "-6",
+   "owner_id" : 268687662,
+   "size" : 1,
+   "thumb_id" : 338970923,
+   "thumb_src" : "https://pp.vk.me/c617421/v617421662/1cf25/TBs_dQiTHFA.jpg",
+   "title" : "My profile photos"
+},
+   
+{
+   "id" : "-7",
+   "owner_id" : 268687662,
+   "size" : 8,
+   "thumb_id" : 338970878,
+   "thumb_src" : "https://pp.vk.me/c617421/v617421662/1cf1d/59_SyxGp87M.jpg",
+   "title" : "My wall photos"
+},
+   
+{
+   "id" : "-15",
+   "owner_id" : 268687662,
+   "size" : 0,
+   "thumb_id" : 0,
+   "thumb_src" : "http://vk.com/images/m_noalbum.png",
+   "title" : "Saved photos"
+},
+   
+{
+   "created" : 1411122101,
+   "description" : "",
+   "id" : 202551109,
+   "owner_id" : 268687662,
+   "size" : 6,
+   "thumb_id" : 339049032,
+   "thumb_src" : "https://pp.vk.me/c623326/v623326662/2839/i7XnxK1rqI4.jpg",
+   "title" : "re777",
+   "updated" : 1411122120
+},
+   
+{
+   "created" : 1411046558,
+   "description" : "",
+   "id" : 202510198,
+   "owner_id" : 268687662,
+   "size" : "14",
+   "thumb_id" : 338976954,
+   "thumb_src" : "https://pp.vk.me/c617421/v617421662/1cfbe/2x8gsmdrMAU.jpg",
+   "title" : "Air",
+   "updated" : 1411046609
+}]
+   
+}

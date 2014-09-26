@@ -7,20 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A715E71A6CB44239FD39213 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16E591D7CA964E03A62181C4 /* libPods.a */; };
-		CE3E0FBD19C1C0230012159B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FBC19C1C0230012159B /* Foundation.framework */; };
-		CE3E0FBF19C1C0230012159B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FBE19C1C0230012159B /* CoreGraphics.framework */; };
-		CE3E0FC119C1C0230012159B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FC019C1C0230012159B /* UIKit.framework */; };
-		CE3E0FC319C1C0230012159B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FC219C1C0230012159B /* CoreData.framework */; };
+		8F3DD6B12E3F4197BCDA199C /* libPods-TestVK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7011BA2A0A4DA58F5EA301 /* libPods-TestVK.a */; };
 		CE3E0FC919C1C0230012159B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FC719C1C0230012159B /* InfoPlist.strings */; };
 		CE3E0FCB19C1C0230012159B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FCA19C1C0230012159B /* main.m */; };
 		CE3E0FCF19C1C0230012159B /* VKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FCE19C1C0230012159B /* VKAppDelegate.m */; };
 		CE3E0FD219C1C0230012159B /* TestVK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FD019C1C0230012159B /* TestVK.xcdatamodeld */; };
 		CE3E0FD419C1C0230012159B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FD319C1C0230012159B /* Images.xcassets */; };
-		CE3E0FDB19C1C0230012159B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FDA19C1C0230012159B /* XCTest.framework */; };
-		CE3E0FDC19C1C0230012159B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FBC19C1C0230012159B /* Foundation.framework */; };
-		CE3E0FDD19C1C0230012159B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FC019C1C0230012159B /* UIKit.framework */; };
-		CE3E0FDE19C1C0230012159B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FC219C1C0230012159B /* CoreData.framework */; };
 		CE3E0FE619C1C0230012159B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FE419C1C0230012159B /* InfoPlist.strings */; };
 		CE3E0FF319C1C1010012159B /* VKStartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FF219C1C1010012159B /* VKStartScreen.m */; };
 		CE9D781F19C32F9C009654F8 /* VKLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D781E19C32F9C009654F8 /* VKLoader.m */; };
@@ -39,6 +31,12 @@
 		CEAFEF5519D5618A003FA1CD /* TestPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */; };
 		CEAFEF5819D57F04003FA1CD /* jsonResponseOfAlbums.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF5619D57F04003FA1CD /* jsonResponseOfAlbums.json */; };
 		CEAFEF5919D57F04003FA1CD /* jsonResponseOfPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF5719D57F04003FA1CD /* jsonResponseOfPhotos.json */; };
+		CEAFEF5D19D593AC003FA1CD /* jsonResponseOfPhotoArray.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF5C19D593AC003FA1CD /* jsonResponseOfPhotoArray.json */; };
+		CEAFEF5F19D593D5003FA1CD /* jsonResponseOfAlbumArray.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF5E19D593D5003FA1CD /* jsonResponseOfAlbumArray.json */; };
+		CEAFEF6119D598A1003FA1CD /* TestAlbumArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEF6019D598A1003FA1CD /* TestAlbumArray.m */; };
+		CEAFEF6419D5A02E003FA1CD /* VKParsingResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEF6319D5A02E003FA1CD /* VKParsingResponse.m */; };
+		CEAFEF6619D5AA89003FA1CD /* TestPhotoArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEF6519D5AA89003FA1CD /* TestPhotoArray.m */; };
+		F47EC0662CC3485F9945B86D /* libPods-TestVKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C1FE17BE8D4F9F887BFC27 /* libPods-TestVKTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +52,10 @@
 /* Begin PBXFileReference section */
 		04B6C8CDE54644A0BF0BAC5F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		16E591D7CA964E03A62181C4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E7011BA2A0A4DA58F5EA301 /* libPods-TestVK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestVK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F06594FE13E472EADA3E0C7 /* Pods-TestVKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVKTests.xcconfig"; path = "Pods/Pods-TestVKTests.xcconfig"; sourceTree = "<group>"; };
+		B1C1FE17BE8D4F9F887BFC27 /* libPods-TestVKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestVKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3E0FB919C1C0230012159B /* TestVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE3E0FBC19C1C0230012159B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CE3E0FBE19C1C0230012159B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE3E0FC019C1C0230012159B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		CE3E0FC219C1C0230012159B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CE3E0FC619C1C0230012159B /* TestVK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestVK-Info.plist"; sourceTree = "<group>"; };
 		CE3E0FC819C1C0230012159B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE3E0FCA19C1C0230012159B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,7 +65,6 @@
 		CE3E0FD119C1C0230012159B /* TestVK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestVK.xcdatamodel; sourceTree = "<group>"; };
 		CE3E0FD319C1C0230012159B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE3E0FD919C1C0230012159B /* TestVKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE3E0FDA19C1C0230012159B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CE3E0FE319C1C0230012159B /* TestVKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestVKTests-Info.plist"; sourceTree = "<group>"; };
 		CE3E0FE519C1C0230012159B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE3E0FF119C1C1010012159B /* VKStartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKStartScreen.h; sourceTree = "<group>"; };
@@ -98,6 +94,13 @@
 		CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPhotoModel.m; sourceTree = "<group>"; };
 		CEAFEF5619D57F04003FA1CD /* jsonResponseOfAlbums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonResponseOfAlbums.json; sourceTree = "<group>"; };
 		CEAFEF5719D57F04003FA1CD /* jsonResponseOfPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonResponseOfPhotos.json; sourceTree = "<group>"; };
+		CEAFEF5C19D593AC003FA1CD /* jsonResponseOfPhotoArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonResponseOfPhotoArray.json; sourceTree = "<group>"; };
+		CEAFEF5E19D593D5003FA1CD /* jsonResponseOfAlbumArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonResponseOfAlbumArray.json; sourceTree = "<group>"; };
+		CEAFEF6019D598A1003FA1CD /* TestAlbumArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAlbumArray.m; sourceTree = "<group>"; };
+		CEAFEF6219D5A02E003FA1CD /* VKParsingResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKParsingResponse.h; sourceTree = "<group>"; };
+		CEAFEF6319D5A02E003FA1CD /* VKParsingResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKParsingResponse.m; sourceTree = "<group>"; };
+		CEAFEF6519D5AA89003FA1CD /* TestPhotoArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPhotoArray.m; sourceTree = "<group>"; };
+		FB49D3E63BFA440D89C2F3FB /* Pods-TestVK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVK.xcconfig"; path = "Pods/Pods-TestVK.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3E0FBF19C1C0230012159B /* CoreGraphics.framework in Frameworks */,
-				CE3E0FC319C1C0230012159B /* CoreData.framework in Frameworks */,
-				CE3E0FC119C1C0230012159B /* UIKit.framework in Frameworks */,
-				CE3E0FBD19C1C0230012159B /* Foundation.framework in Frameworks */,
-				6A715E71A6CB44239FD39213 /* libPods.a in Frameworks */,
+				8F3DD6B12E3F4197BCDA199C /* libPods-TestVK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,10 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3E0FDB19C1C0230012159B /* XCTest.framework in Frameworks */,
-				CE3E0FDE19C1C0230012159B /* CoreData.framework in Frameworks */,
-				CE3E0FDD19C1C0230012159B /* UIKit.framework in Frameworks */,
-				CE3E0FDC19C1C0230012159B /* Foundation.framework in Frameworks */,
+				F47EC0662CC3485F9945B86D /* libPods-TestVKTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +131,8 @@
 				CE3E0FBB19C1C0230012159B /* Frameworks */,
 				CE3E0FBA19C1C0230012159B /* Products */,
 				04B6C8CDE54644A0BF0BAC5F /* Pods.xcconfig */,
+				FB49D3E63BFA440D89C2F3FB /* Pods-TestVK.xcconfig */,
+				9F06594FE13E472EADA3E0C7 /* Pods-TestVKTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,12 +148,9 @@
 		CE3E0FBB19C1C0230012159B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE3E0FBC19C1C0230012159B /* Foundation.framework */,
-				CE3E0FBE19C1C0230012159B /* CoreGraphics.framework */,
-				CE3E0FC019C1C0230012159B /* UIKit.framework */,
-				CE3E0FC219C1C0230012159B /* CoreData.framework */,
-				CE3E0FDA19C1C0230012159B /* XCTest.framework */,
 				16E591D7CA964E03A62181C4 /* libPods.a */,
+				9E7011BA2A0A4DA58F5EA301 /* libPods-TestVK.a */,
+				B1C1FE17BE8D4F9F887BFC27 /* libPods-TestVKTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,6 +162,8 @@
 				CE9F013519D4223900085557 /* DTFixtureLoader.m */,
 				CE9D781D19C32F9C009654F8 /* VKLoader.h */,
 				CE9D781E19C32F9C009654F8 /* VKLoader.m */,
+				CEAFEF6219D5A02E003FA1CD /* VKParsingResponse.h */,
+				CEAFEF6319D5A02E003FA1CD /* VKParsingResponse.m */,
 				CE3E0FCD19C1C0230012159B /* VKAppDelegate.h */,
 				CE3E0FCE19C1C0230012159B /* VKAppDelegate.m */,
 				CE3E0FF119C1C1010012159B /* VKStartScreen.h */,
@@ -196,10 +193,14 @@
 		CE3E0FE119C1C0230012159B /* TestVKTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEAFEF5E19D593D5003FA1CD /* jsonResponseOfAlbumArray.json */,
+				CEAFEF5C19D593AC003FA1CD /* jsonResponseOfPhotoArray.json */,
 				CEAFEF5619D57F04003FA1CD /* jsonResponseOfAlbums.json */,
 				CEAFEF5719D57F04003FA1CD /* jsonResponseOfPhotos.json */,
 				CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */,
 				CEAFEF3819D56015003FA1CD /* TestAlbumModel.m */,
+				CEAFEF6019D598A1003FA1CD /* TestAlbumArray.m */,
+				CEAFEF6519D5AA89003FA1CD /* TestPhotoArray.m */,
 				CE3E0FE219C1C0230012159B /* Supporting Files */,
 			);
 			path = TestVKTests;
@@ -277,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE3E0FEE19C1C0230012159B /* Build configuration list for PBXNativeTarget "TestVKTests" */;
 			buildPhases = (
+				B51B3115110F4788BAE37F63 /* Check Pods Manifest.lock */,
 				CE3E0FD519C1C0230012159B /* Sources */,
 				CE3E0FD619C1C0230012159B /* Frameworks */,
 				CE3E0FD719C1C0230012159B /* Resources */,
+				69D4CB62F2DD4152977C3E83 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -341,8 +344,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAFEF5D19D593AC003FA1CD /* jsonResponseOfPhotoArray.json in Resources */,
 				CEAFEF5919D57F04003FA1CD /* jsonResponseOfPhotos.json in Resources */,
 				CE3E0FE619C1C0230012159B /* InfoPlist.strings in Resources */,
+				CEAFEF5F19D593D5003FA1CD /* jsonResponseOfAlbumArray.json in Resources */,
 				CEAFEF5819D57F04003FA1CD /* jsonResponseOfAlbums.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +355,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		69D4CB62F2DD4152977C3E83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-TestVKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B51B3115110F4788BAE37F63 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		D63D4EB26DF4419C812D96C0 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,7 +412,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-TestVK-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -399,6 +434,7 @@
 				CE3E0FCB19C1C0230012159B /* main.m in Sources */,
 				CEA17A8419C9A6DC00B2F3C8 /* VKPhotoModel.m in Sources */,
 				CE9F013619D4223900085557 /* DTFixtureLoader.m in Sources */,
+				CEAFEF6419D5A02E003FA1CD /* VKParsingResponse.m in Sources */,
 				CEA17A8C19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,7 +443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAFEF6619D5AA89003FA1CD /* TestPhotoArray.m in Sources */,
 				CEAFEF5519D5618A003FA1CD /* TestPhotoModel.m in Sources */,
+				CEAFEF6119D598A1003FA1CD /* TestAlbumArray.m in Sources */,
 				CEAFEF5119D56082003FA1CD /* TestAlbumModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,7 +552,7 @@
 		};
 		CE3E0FEC19C1C0230012159B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04B6C8CDE54644A0BF0BAC5F /* Pods.xcconfig */;
+			baseConfigurationReference = FB49D3E63BFA440D89C2F3FB /* Pods-TestVK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -528,7 +566,7 @@
 		};
 		CE3E0FED19C1C0230012159B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04B6C8CDE54644A0BF0BAC5F /* Pods.xcconfig */;
+			baseConfigurationReference = FB49D3E63BFA440D89C2F3FB /* Pods-TestVK.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -542,6 +580,7 @@
 		};
 		CE3E0FEF19C1C0230012159B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F06594FE13E472EADA3E0C7 /* Pods-TestVKTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestVK.app/TestVK";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -564,6 +603,7 @@
 		};
 		CE3E0FF019C1C0230012159B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F06594FE13E472EADA3E0C7 /* Pods-TestVKTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestVK.app/TestVK";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VKSdk.h"
 
 @interface VKLoader : NSObject
 
@@ -16,5 +17,4 @@
 +(void) loadPhotosWithIdOfAlbum:(NSInteger) idOfAlbum
             andWithSuccessBlock:(void (^) (NSArray* photos)) success
                         failure:(void (^) (NSError* error)) failure;
-
 @end

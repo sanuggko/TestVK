@@ -32,7 +32,7 @@
 
 - (void)tearDown
 {
-    
+    [super tearDown];
 }
 
 - (void)testAlbumsUrls
