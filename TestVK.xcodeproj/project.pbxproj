@@ -35,10 +35,10 @@
 		CEA4F48019D05EC400887D66 /* VKCustomAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA4F47F19D05EC400887D66 /* VKCustomAlbumViewCell.xib */; };
 		CEA71E7F19C81D7800D86AA8 /* VKCustomAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */; };
 		CEA71E8319C8612700D86AA8 /* VKAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */; };
-		CEAFEF2E19D552FC003FA1CD /* jsonResponseOfAlbums.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF2C19D552F4003FA1CD /* jsonResponseOfAlbums.json */; };
-		CEAFEF3119D553A0003FA1CD /* jsonResponseOfPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF2F19D55383003FA1CD /* jsonResponseOfPhotos.json */; };
 		CEAFEF5119D56082003FA1CD /* TestAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEF3819D56015003FA1CD /* TestAlbumModel.m */; };
 		CEAFEF5519D5618A003FA1CD /* TestPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */; };
+		CEAFEF5819D57F04003FA1CD /* jsonResponseOfAlbums.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF5619D57F04003FA1CD /* jsonResponseOfAlbums.json */; };
+		CEAFEF5919D57F04003FA1CD /* jsonResponseOfPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF5719D57F04003FA1CD /* jsonResponseOfPhotos.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,10 +94,10 @@
 		CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCustomAlbumViewCell.m; sourceTree = "<group>"; };
 		CEA71E8119C8612700D86AA8 /* VKAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAlbumModel.h; sourceTree = "<group>"; };
 		CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAlbumModel.m; sourceTree = "<group>"; };
-		CEAFEF2C19D552F4003FA1CD /* jsonResponseOfAlbums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = jsonResponseOfAlbums.json; path = ../TestVK/jsonResponseOfAlbums.json; sourceTree = "<group>"; };
-		CEAFEF2F19D55383003FA1CD /* jsonResponseOfPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = jsonResponseOfPhotos.json; path = ../TestVK/jsonResponseOfPhotos.json; sourceTree = "<group>"; };
 		CEAFEF3819D56015003FA1CD /* TestAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAlbumModel.m; sourceTree = "<group>"; };
 		CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPhotoModel.m; sourceTree = "<group>"; };
+		CEAFEF5619D57F04003FA1CD /* jsonResponseOfAlbums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonResponseOfAlbums.json; sourceTree = "<group>"; };
+		CEAFEF5719D57F04003FA1CD /* jsonResponseOfPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonResponseOfPhotos.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,9 +196,9 @@
 		CE3E0FE119C1C0230012159B /* TestVKTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEAFEF5619D57F04003FA1CD /* jsonResponseOfAlbums.json */,
+				CEAFEF5719D57F04003FA1CD /* jsonResponseOfPhotos.json */,
 				CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */,
-				CEAFEF2F19D55383003FA1CD /* jsonResponseOfPhotos.json */,
-				CEAFEF2C19D552F4003FA1CD /* jsonResponseOfAlbums.json */,
 				CEAFEF3819D56015003FA1CD /* TestAlbumModel.m */,
 				CE3E0FE219C1C0230012159B /* Supporting Files */,
 			);
@@ -341,9 +341,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEAFEF3119D553A0003FA1CD /* jsonResponseOfPhotos.json in Resources */,
+				CEAFEF5919D57F04003FA1CD /* jsonResponseOfPhotos.json in Resources */,
 				CE3E0FE619C1C0230012159B /* InfoPlist.strings in Resources */,
-				CEAFEF2E19D552FC003FA1CD /* jsonResponseOfAlbums.json in Resources */,
+				CEAFEF5819D57F04003FA1CD /* jsonResponseOfAlbums.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
