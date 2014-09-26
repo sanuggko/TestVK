@@ -22,9 +22,9 @@
 		CE3E0FDD19C1C0230012159B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FC019C1C0230012159B /* UIKit.framework */; };
 		CE3E0FDE19C1C0230012159B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3E0FC219C1C0230012159B /* CoreData.framework */; };
 		CE3E0FE619C1C0230012159B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FE419C1C0230012159B /* InfoPlist.strings */; };
-		CE3E0FE819C1C0230012159B /* TestVKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FE719C1C0230012159B /* TestVKTests.m */; };
 		CE3E0FF319C1C1010012159B /* VKStartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FF219C1C1010012159B /* VKStartScreen.m */; };
 		CE9D781F19C32F9C009654F8 /* VKLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D781E19C32F9C009654F8 /* VKLoader.m */; };
+		CE9F013619D4223900085557 /* DTFixtureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9F013519D4223900085557 /* DTFixtureLoader.m */; };
 		CEA0E3B219CAEF5F003D7749 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */; };
 		CEA0E3B619CAFCD3003D7749 /* Vk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */; };
 		CEA17A7D19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A7C19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m */; };
@@ -35,6 +35,10 @@
 		CEA4F48019D05EC400887D66 /* VKCustomAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA4F47F19D05EC400887D66 /* VKCustomAlbumViewCell.xib */; };
 		CEA71E7F19C81D7800D86AA8 /* VKCustomAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */; };
 		CEA71E8319C8612700D86AA8 /* VKAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */; };
+		CEAFEF2E19D552FC003FA1CD /* jsonResponseOfAlbums.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF2C19D552F4003FA1CD /* jsonResponseOfAlbums.json */; };
+		CEAFEF3119D553A0003FA1CD /* jsonResponseOfPhotos.json in Resources */ = {isa = PBXBuildFile; fileRef = CEAFEF2F19D55383003FA1CD /* jsonResponseOfPhotos.json */; };
+		CEAFEF5119D56082003FA1CD /* TestAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEF3819D56015003FA1CD /* TestAlbumModel.m */; };
+		CEAFEF5519D5618A003FA1CD /* TestPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,11 +71,12 @@
 		CE3E0FDA19C1C0230012159B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CE3E0FE319C1C0230012159B /* TestVKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestVKTests-Info.plist"; sourceTree = "<group>"; };
 		CE3E0FE519C1C0230012159B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE3E0FE719C1C0230012159B /* TestVKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestVKTests.m; sourceTree = "<group>"; };
 		CE3E0FF119C1C1010012159B /* VKStartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKStartScreen.h; sourceTree = "<group>"; };
 		CE3E0FF219C1C1010012159B /* VKStartScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKStartScreen.m; sourceTree = "<group>"; };
 		CE9D781D19C32F9C009654F8 /* VKLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoader.h; sourceTree = "<group>"; };
 		CE9D781E19C32F9C009654F8 /* VKLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoader.m; sourceTree = "<group>"; };
+		CE9F013419D4223900085557 /* DTFixtureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFixtureLoader.h; sourceTree = "<group>"; };
+		CE9F013519D4223900085557 /* DTFixtureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFixtureLoader.m; sourceTree = "<group>"; };
 		CEA0E3B019CAEF5F003D7749 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Vk.storyboard; sourceTree = "<group>"; };
@@ -89,6 +94,10 @@
 		CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKCustomAlbumViewCell.m; sourceTree = "<group>"; };
 		CEA71E8119C8612700D86AA8 /* VKAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKAlbumModel.h; sourceTree = "<group>"; };
 		CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKAlbumModel.m; sourceTree = "<group>"; };
+		CEAFEF2C19D552F4003FA1CD /* jsonResponseOfAlbums.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = jsonResponseOfAlbums.json; path = ../TestVK/jsonResponseOfAlbums.json; sourceTree = "<group>"; };
+		CEAFEF2F19D55383003FA1CD /* jsonResponseOfPhotos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = jsonResponseOfPhotos.json; path = ../TestVK/jsonResponseOfPhotos.json; sourceTree = "<group>"; };
+		CEAFEF3819D56015003FA1CD /* TestAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAlbumModel.m; sourceTree = "<group>"; };
+		CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPhotoModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +163,8 @@
 		CE3E0FC419C1C0230012159B /* TestVK */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F013419D4223900085557 /* DTFixtureLoader.h */,
+				CE9F013519D4223900085557 /* DTFixtureLoader.m */,
 				CE9D781D19C32F9C009654F8 /* VKLoader.h */,
 				CE9D781E19C32F9C009654F8 /* VKLoader.m */,
 				CE3E0FCD19C1C0230012159B /* VKAppDelegate.h */,
@@ -185,7 +196,10 @@
 		CE3E0FE119C1C0230012159B /* TestVKTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE3E0FE719C1C0230012159B /* TestVKTests.m */,
+				CEAFEF5419D5618A003FA1CD /* TestPhotoModel.m */,
+				CEAFEF2F19D55383003FA1CD /* jsonResponseOfPhotos.json */,
+				CEAFEF2C19D552F4003FA1CD /* jsonResponseOfAlbums.json */,
+				CEAFEF3819D56015003FA1CD /* TestAlbumModel.m */,
 				CE3E0FE219C1C0230012159B /* Supporting Files */,
 			);
 			path = TestVKTests;
@@ -327,7 +341,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAFEF3119D553A0003FA1CD /* jsonResponseOfPhotos.json in Resources */,
 				CE3E0FE619C1C0230012159B /* InfoPlist.strings in Resources */,
+				CEAFEF2E19D552FC003FA1CD /* jsonResponseOfAlbums.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +398,7 @@
 				CEA71E8319C8612700D86AA8 /* VKAlbumModel.m in Sources */,
 				CE3E0FCB19C1C0230012159B /* main.m in Sources */,
 				CEA17A8419C9A6DC00B2F3C8 /* VKPhotoModel.m in Sources */,
+				CE9F013619D4223900085557 /* DTFixtureLoader.m in Sources */,
 				CEA17A8C19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,7 +407,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3E0FE819C1C0230012159B /* TestVKTests.m in Sources */,
+				CEAFEF5519D5618A003FA1CD /* TestPhotoModel.m in Sources */,
+				CEAFEF5119D56082003FA1CD /* TestAlbumModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

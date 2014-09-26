@@ -37,6 +37,11 @@
                BlueprintName = "TestVKTests"
                ReferencedContainer = "container:TestVK.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "TestVKTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>
