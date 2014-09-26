@@ -13,9 +13,9 @@
 
 @implementation VKCustomPhotoThumbnailViewCell
 
-- (void)updatePhotoView:(VKPhotoModel *) currentPhoto
+- (void)updatePhotoView:(VKPhotoModel *)currentPhoto
 {
-    [self setPhotoFromURL: currentPhoto.urlOfSmallPhoto];
+    [self setPhotoFromURL:currentPhoto.urlOfSmallPhoto];
 }
 
 - (void) setPhotoFromURL:(NSURL *)urlOfPhoto

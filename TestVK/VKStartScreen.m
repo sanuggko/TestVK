@@ -16,8 +16,6 @@ static NSArray  * SCOPE = nil;
 
 @implementation VKStartScreen
 
-
-
 - (void)viewDidLoad {
     SCOPE = @[VK_PER_PHOTOS, VK_PER_NOHTTPS];
 	[super viewDidLoad];
@@ -27,12 +25,15 @@ static NSArray  * SCOPE = nil;
         [self startWorking];
     }
 }
+
 - (void)startWorking {
     [self performSegueWithIdentifier:SEGUE_ID sender:self];
 }
+
 - (IBAction)authorize:(id)sender {
 	[VKSdk authorize:SCOPE revokeAccess:YES];
 }
+
 - (IBAction)authorizeForceOAuthInApp:(id)sender {
 	[VKSdk authorize:SCOPE revokeAccess:YES forceOAuth:YES inApp:YES display:VK_DISPLAY_IOS];
 }
@@ -53,9 +54,11 @@ static NSArray  * SCOPE = nil;
 - (void)vkSdkAcceptedUserToken:(VKAccessToken *)token {
     [self startWorking];
 }
+
 - (void)vkSdkUserDeniedAccess:(VKError *)authorizationError {
 	[[[UIAlertView alloc] initWithTitle:nil message:@"Access denied" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
 }
+
 - (void)vkSdkTokenHasExpired:(VKAccessToken *)expiredToken {
 	[self authorize:nil];
 }

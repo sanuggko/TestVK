@@ -13,4 +13,6 @@
 @property (nonatomic, strong) NSURL *urlOfSmallPhoto;
 @property (nonatomic, strong) NSURL *urlOfBigPhoto;
 
+- (instancetype)initWithProperties:(NSDictionary *)temp;
+
 @end

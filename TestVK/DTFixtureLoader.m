@@ -35,6 +35,7 @@
     NSError *error = nil;
     NSString *filePath = [self.fileBundle pathForResource:fileName
                                                    ofType:nil];
+    NSLog(@"filePath are %@", filePath);
     NSData * data = [NSData dataWithContentsOfFile:filePath];
     
     id parsedObject = [NSJSONSerialization JSONObjectWithData:data

@@ -10,4 +10,14 @@
 
 @implementation VKAlbumModel
 
+- (instancetype)initWithProperties:(NSDictionary *)temp
+{
+    self = [super init];
+    if (self){
+        self.nameOfAlbum = [temp valueForKey:@"title"];
+        self.urlOfAlbumThumbnail = [NSURL URLWithString:[temp valueForKey:@"thumb_src"]];
+        self.albumId = [temp valueForKey:@"id"];
+    }
+    return self;
+}
 @end

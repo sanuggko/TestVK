@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong) NSString *nameOfAlbum;
 @property (nonatomic, strong) NSURL *urlOfAlbumThumbnail;
-@property (nonatomic, strong) NSString *albumId;
+@property (nonatomic, strong) NSNumber *albumId;
+
+- (instancetype)initWithProperties:(NSDictionary *)temp;
 
 @end
