@@ -40,4 +40,26 @@
     return photoAlbum;
 }
 
++ (NSArray *)arrayOfPhotoGeoCoordinateFromVKresponse:(VKResponse *)response
+{
+    NSMutableArray *arrayOfPhotoGeoCoordinate = [[NSMutableArray alloc]init];
+    NSDictionary *dictionary = response.json;
+    
+    NSArray *items = [dictionary valueForKeyPath:@"items"];
+    
+    NSUInteger currentIndex = 0;
+    
+    for (int index = 0; index < [items count]; index++)
+    {
+        NSDictionary *temp = items[index];
+        VKPhotoGeoCoordinateModel *geoCoordinate = [[VKPhotoGeoCoordinateModel alloc]initWithProperties:temp];
+        if (geoCoordinate)
+        {
+            geoCoordinate.index = currentIndex++;
+          [arrayOfPhotoGeoCoordinate addObject:geoCoordinate];
+        }
+    }
+    return arrayOfPhotoGeoCoordinate;
+}
+
 @end

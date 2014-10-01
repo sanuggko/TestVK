@@ -11,10 +11,14 @@
 
 @interface VKLoader : NSObject
 
-+(void)loadAlbumsWithSuccessBlock:(void(^)(NSArray * albums))success
-                          failure:(void(^)(NSError * error))failure;
++ (void)loadAlbumsWithSuccessBlock:(void(^)(NSArray *albums))success
+                          failure:(void(^)(NSError *error))failure;
 
-+(void) loadPhotosWithIdOfAlbum:(NSInteger) idOfAlbum
-            andWithSuccessBlock:(void (^) (NSArray* photos)) success
-                        failure:(void (^) (NSError* error)) failure;
++ (void)loadPhotosWithIdOfAlbum:(NSInteger) idOfAlbum
+            andWithSuccessBlock:(void (^) (NSArray *photos)) success
+                        failure:(void (^) (NSError *error)) failure;
+
++ (void)loadPhotoCoordinateWithSuccessBlock:(void(^)(NSArray *array))success
+                                     failure:(void(^)(NSError *error))failure;
+
 @end

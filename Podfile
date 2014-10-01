@@ -3,7 +3,7 @@ inhibit_all_warnings!
 
 target "TestVK" do 
   pod 'VK-ios-sdk', '~> 1.0'
-  pod 'AFNetworking-MUResponseSerializer', '~> 1.0'
+  pod 'AFNetworking-MUResponseSerializer', '~> 1.0'	
 end
 
 target "TestVKTests" do

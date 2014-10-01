@@ -10,7 +10,7 @@
                 <viewController id="tlC-lt-EfZ" customClass="VKStartScreen" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9WZ-Y3-zR5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Adg-GY-Lk2">
                                 <rect key="frame" x="137" y="269" width="38" height="30"/>
@@ -20,13 +20,15 @@
                                 </state>
                                 <connections>
                                     <action selector="authorizeForceOAuthInApp:" destination="tlC-lt-EfZ" eventType="touchUpInside" id="2ai-zo-e7L"/>
-                                    <segue destination="Gli-Ud-wsg" kind="push" identifier="START" id="nkW-tu-edu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IAA-Ke-s48"/>
+                    <connections>
+                        <segue destination="ATC-oQ-uiO" kind="push" identifier="START" id="mar-jJ-DaA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dHc-Ue-dEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +47,7 @@
                             <outlet property="delegate" destination="Gli-Ud-wsg" id="Ctk-S4-Oew"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Albums" image="help_menu" id="dYi-ws-Pl9"/>
                     <navigationItem key="navigationItem" title="Albums" id="QfI-sB-v9q"/>
                     <connections>
                         <segue destination="Kf4-dx-W7x" kind="push" identifier="toPhotoList" id="c2V-fE-gPj"/>
@@ -52,7 +55,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="478-Xk-E25" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1109" y="116"/>
+            <point key="canvasLocation" x="1831" y="-265"/>
         </scene>
         <!--Photos Thrumbnail View Controller-->
         <scene sceneID="BHD-1A-mxV">
@@ -82,7 +85,56 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ggw-3w-Cfz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1559" y="117"/>
+            <point key="canvasLocation" x="2227" y="-265"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RLQ-Wl-dDw">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="ATC-oQ-uiO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="y16-uU-uP3"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="nlN-ny-PLe">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Gli-Ud-wsg" kind="relationship" relationship="viewControllers" id="NMH-un-W3n"/>
+                        <segue destination="Qfy-zx-tbe" kind="relationship" relationship="viewControllers" id="zd7-8e-ZVk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tb-iK-hZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="116"/>
+        </scene>
+        <!--Photo Geo Coordinate View Controller - Places-->
+        <scene sceneID="BNw-Dv-3fa">
+            <objects>
+                <viewController id="Qfy-zx-tbe" customClass="VKPhotoGeoCoordinateViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jUD-wj-Jr5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="WSf-n4-Bys">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Qfy-zx-tbe" id="HUo-15-cus"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Places" image="help_pic" id="fKX-79-34O"/>
+                    <navigationItem key="navigationItem" id="Ubo-vQ-Jdx"/>
+                    <connections>
+                        <outlet property="localization" destination="WSf-n4-Bys" id="cue-25-Udg"/>
+                        <segue destination="d2C-Du-WPE" kind="push" identifier="toPhotoView" id="F7u-l3-YZr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l6g-zU-GF2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="685"/>
         </scene>
         <!--Photo View Controller-->
         <scene sceneID="Pim-RU-FeV">
@@ -124,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LR-le-96j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1961" y="116"/>
+            <point key="canvasLocation" x="2629" y="-266"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VLa-lc-JJZ">
@@ -149,9 +201,16 @@
             <point key="canvasLocation" x="141" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="help_menu" width="19" height="19"/>
+        <image name="help_pic" width="19" height="19"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="F7u-l3-YZr"/>
+    </inferredMetricsTieBreakers>
 </document>

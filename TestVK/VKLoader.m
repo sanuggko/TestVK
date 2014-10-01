@@ -49,7 +49,6 @@ static NSString *const VK_API_NEED_COVERS    = @"need_covers";
     
     [req executeWithResultBlock:^(VKResponse *response) {
         
-        
     success([VKParsingResponse arrayOfPhotosFromVKResponse:response andAlbumId:idOfAlbum]);
         
     } errorBlock:^(NSError *error) {
@@ -60,5 +59,24 @@ static NSString *const VK_API_NEED_COVERS    = @"need_covers";
     
 }
 
++ (void)loadPhotoCoordinateWithSuccessBlock:(void(^)(NSArray *array))success
+                                    failure:(void(^)(NSError *error))failure
+{
+    VKRequest *req  = [VKRequest requestWithMethod:@"photos.getAll"
+                                     andParameters:@{VK_API_NO_SERVICE_ALBUMS:@0, VK_API_COUNT:@200}
+                                     andHttpMethod:@"GET"];
+    
+    [req executeWithResultBlock:^(VKResponse *response) {
+        
+        success([VKParsingResponse arrayOfPhotoGeoCoordinateFromVKresponse:response]);
+        
+    } errorBlock:^(NSError *error) {
+        if(failure){
+            failure(error);
+        }
+    }];
+    
+
+}
 
 @end

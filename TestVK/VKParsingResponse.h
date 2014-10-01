@@ -11,11 +11,14 @@
 #import <VKSdk.h>
 #import "VKAlbumModel.h"
 #import "VKPhotoModel.h"
+#import "VKPhotoGeoCoordinateModel.h"
 
 @interface VKParsingResponse : NSObject
 
 + (NSArray *)arrayOfAlbumsFromVKResponse:(VKResponse *)response;
 
 + (NSArray *)arrayOfPhotosFromVKResponse:(VKResponse *)response andAlbumId:(NSInteger) idOfAlbum;
+
++ (NSArray *)arrayOfPhotoGeoCoordinateFromVKresponse:(VKResponse *)response;
 
 @end
