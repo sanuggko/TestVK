@@ -43,12 +43,27 @@ static NSString *const VK_API_NEED_COVERS    = @"need_covers";
 
 + (void)loadPhotosWithIdOfAlbum:(NSInteger) idOfAlbum andWithSuccessBlock:(void (^) (NSArray *)) success failure:(void (^) (NSError *)) failure
 {
+    if (idOfAlbum == (-15))
+    {
+        VKRequest *req  = [VKRequest requestWithMethod:@"photos.get"
+                                         andParameters:@{VK_API_ALBUM_ID:@"saved"}
+                                         andHttpMethod:@"GET"];
+        [req executeWithResultBlock:^(VKResponse *response) {
+            success([VKParsingResponse arrayOfPhotosFromVKResponse:response andAlbumId:idOfAlbum]);
+            
+        } errorBlock:^(NSError *error) {
+            if(failure){
+                failure(error);
+            }
+        }];
+    } else{
+    
     VKRequest *req  = [VKRequest requestWithMethod:@"photos.getAll"
                                      andParameters:@{VK_API_NO_SERVICE_ALBUMS:@0, VK_API_COUNT:@200}
                                      andHttpMethod:@"GET"];
     
     [req executeWithResultBlock:^(VKResponse *response) {
-        
+       
     success([VKParsingResponse arrayOfPhotosFromVKResponse:response andAlbumId:idOfAlbum]);
         
     } errorBlock:^(NSError *error) {
@@ -56,7 +71,7 @@ static NSString *const VK_API_NEED_COVERS    = @"need_covers";
             failure(error);
         }
     }];
-    
+    }
 }
 
 + (void)loadPhotoCoordinateWithSuccessBlock:(void(^)(NSArray *array))success
@@ -75,7 +90,7 @@ static NSString *const VK_API_NEED_COVERS    = @"need_covers";
             failure(error);
         }
     }];
-    
+
 
 }
 

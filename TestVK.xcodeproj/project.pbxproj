@@ -14,9 +14,11 @@
 		CE3E0FD219C1C0230012159B /* TestVK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FD019C1C0230012159B /* TestVK.xcdatamodeld */; };
 		CE3E0FD419C1C0230012159B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FD319C1C0230012159B /* Images.xcassets */; };
 		CE3E0FE619C1C0230012159B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FE419C1C0230012159B /* InfoPlist.strings */; };
-		CE3E0FF319C1C1010012159B /* VKStartScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FF219C1C1010012159B /* VKStartScreen.m */; };
+		CE3E0FF319C1C1010012159B /* VKStartScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FF219C1C1010012159B /* VKStartScreenViewController.m */; };
 		CE9D781F19C32F9C009654F8 /* VKLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D781E19C32F9C009654F8 /* VKLoader.m */; };
 		CE9F013619D4223900085557 /* DTFixtureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9F013519D4223900085557 /* DTFixtureLoader.m */; };
+		CE9FDED119DD3D2F00CBBE24 /* VKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FDED019DD3D2F00CBBE24 /* VKHelper.m */; };
+		CE9FDED419DD571600CBBE24 /* VKChangeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FDED319DD571600CBBE24 /* VKChangeRootViewController.m */; };
 		CEA0E3B219CAEF5F003D7749 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */; };
 		CEA0E3B619CAFCD3003D7749 /* Vk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */; };
 		CEA17A7D19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A7C19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m */; };
@@ -71,12 +73,16 @@
 		CE3E0FD919C1C0230012159B /* TestVKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestVKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3E0FE319C1C0230012159B /* TestVKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestVKTests-Info.plist"; sourceTree = "<group>"; };
 		CE3E0FE519C1C0230012159B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE3E0FF119C1C1010012159B /* VKStartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKStartScreen.h; sourceTree = "<group>"; };
-		CE3E0FF219C1C1010012159B /* VKStartScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKStartScreen.m; sourceTree = "<group>"; };
+		CE3E0FF119C1C1010012159B /* VKStartScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKStartScreenViewController.h; sourceTree = "<group>"; };
+		CE3E0FF219C1C1010012159B /* VKStartScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKStartScreenViewController.m; sourceTree = "<group>"; };
 		CE9D781D19C32F9C009654F8 /* VKLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKLoader.h; sourceTree = "<group>"; };
 		CE9D781E19C32F9C009654F8 /* VKLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKLoader.m; sourceTree = "<group>"; };
-		CE9F013419D4223900085557 /* DTFixtureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTFixtureLoader.h; sourceTree = "<group>"; };
-		CE9F013519D4223900085557 /* DTFixtureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTFixtureLoader.m; sourceTree = "<group>"; };
+		CE9F013419D4223900085557 /* DTFixtureLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTFixtureLoader.h; path = ../TestVK/DTFixtureLoader.h; sourceTree = "<group>"; };
+		CE9F013519D4223900085557 /* DTFixtureLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTFixtureLoader.m; path = ../TestVK/DTFixtureLoader.m; sourceTree = "<group>"; };
+		CE9FDECF19DD3D2F00CBBE24 /* VKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKHelper.h; sourceTree = "<group>"; };
+		CE9FDED019DD3D2F00CBBE24 /* VKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKHelper.m; sourceTree = "<group>"; };
+		CE9FDED219DD571600CBBE24 /* VKChangeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKChangeRootViewController.h; sourceTree = "<group>"; };
+		CE9FDED319DD571600CBBE24 /* VKChangeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKChangeRootViewController.m; sourceTree = "<group>"; };
 		CEA0E3B019CAEF5F003D7749 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Vk.storyboard; sourceTree = "<group>"; };
@@ -135,6 +141,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1A6C8619DD60A000787378 /* VKHelper */ = {
+			isa = PBXGroup;
+			children = (
+				CE9FDED019DD3D2F00CBBE24 /* VKHelper.m */,
+				CE9FDECF19DD3D2F00CBBE24 /* VKHelper.h */,
+				CE9FDED219DD571600CBBE24 /* VKChangeRootViewController.h */,
+				CE9FDED319DD571600CBBE24 /* VKChangeRootViewController.m */,
+				CE9D781D19C32F9C009654F8 /* VKLoader.h */,
+				CE9D781E19C32F9C009654F8 /* VKLoader.m */,
+				CEAFEF6219D5A02E003FA1CD /* VKParsingResponse.h */,
+				CEAFEF6319D5A02E003FA1CD /* VKParsingResponse.m */,
+			);
+			name = VKHelper;
+			sourceTree = "<group>";
+		};
+		CE1A6C8719DD60B000787378 /* VKApp */ = {
+			isa = PBXGroup;
+			children = (
+				CE3E0FCD19C1C0230012159B /* VKAppDelegate.h */,
+				CE3E0FCE19C1C0230012159B /* VKAppDelegate.m */,
+			);
+			name = VKApp;
+			sourceTree = "<group>";
+		};
+		CE1A6C8819DD617800787378 /* VKModels */ = {
+			isa = PBXGroup;
+			children = (
+				CE1A6C8C19DD634500787378 /* VKPhotoGeoCoordinateModel */,
+				CE1A6C8B19DD632800787378 /* VKAlbumModel */,
+				CE1A6C8A19DD630000787378 /* VKPhotoModel */,
+			);
+			name = VKModels;
+			sourceTree = "<group>";
+		};
+		CE1A6C8919DD61C400787378 /* VKControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEA186A919D9860200C1A298 /* MapViewControllers */,
+				CEA17A7E19C980FA00B2F3C8 /* VKAlbumsViewerControllers */,
+			);
+			name = VKControllers;
+			sourceTree = "<group>";
+		};
+		CE1A6C8A19DD630000787378 /* VKPhotoModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEA17A8219C9A6DC00B2F3C8 /* VKPhotoModel.h */,
+				CEA17A8319C9A6DC00B2F3C8 /* VKPhotoModel.m */,
+			);
+			name = VKPhotoModel;
+			sourceTree = "<group>";
+		};
+		CE1A6C8B19DD632800787378 /* VKAlbumModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEA71E8119C8612700D86AA8 /* VKAlbumModel.h */,
+				CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */,
+			);
+			name = VKAlbumModel;
+			sourceTree = "<group>";
+		};
+		CE1A6C8C19DD634500787378 /* VKPhotoGeoCoordinateModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEA186AD19D987F100C1A298 /* VKPhotoGeoCoordinateModel.h */,
+				CEA186AE19D987F100C1A298 /* VKPhotoGeoCoordinateModel.m */,
+			);
+			name = VKPhotoGeoCoordinateModel;
+			sourceTree = "<group>";
+		};
 		CE3E0FB019C1C0230012159B = {
 			isa = PBXGroup;
 			children = (
@@ -172,20 +248,12 @@
 		CE3E0FC419C1C0230012159B /* TestVK */ = {
 			isa = PBXGroup;
 			children = (
-				CE9F013419D4223900085557 /* DTFixtureLoader.h */,
-				CE9F013519D4223900085557 /* DTFixtureLoader.m */,
-				CE9D781D19C32F9C009654F8 /* VKLoader.h */,
-				CE9D781E19C32F9C009654F8 /* VKLoader.m */,
-				CEAFEF6219D5A02E003FA1CD /* VKParsingResponse.h */,
-				CEAFEF6319D5A02E003FA1CD /* VKParsingResponse.m */,
-				CE3E0FCD19C1C0230012159B /* VKAppDelegate.h */,
-				CE3E0FCE19C1C0230012159B /* VKAppDelegate.m */,
-				CE3E0FF119C1C1010012159B /* VKStartScreen.h */,
-				CE3E0FF219C1C1010012159B /* VKStartScreen.m */,
-				CEA186A919D9860200C1A298 /* MapView */,
-				CEA17A7E19C980FA00B2F3C8 /* VKAlbumsViewer */,
-				CEA17A8019C9812B00B2F3C8 /* VKPhotoViewer */,
-				CEA0E3AF19CAEF1C003D7749 /* PhotoView */,
+				CE3E0FF119C1C1010012159B /* VKStartScreenViewController.h */,
+				CE3E0FF219C1C1010012159B /* VKStartScreenViewController.m */,
+				CE1A6C8619DD60A000787378 /* VKHelper */,
+				CE1A6C8719DD60B000787378 /* VKApp */,
+				CE1A6C8819DD617800787378 /* VKModels */,
+				CE1A6C8919DD61C400787378 /* VKControllers */,
 				CE3E0FC519C1C0230012159B /* Supporting Files */,
 			);
 			path = TestVK;
@@ -208,6 +276,8 @@
 		CE3E0FE119C1C0230012159B /* TestVKTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE9F013419D4223900085557 /* DTFixtureLoader.h */,
+				CE9F013519D4223900085557 /* DTFixtureLoader.m */,
 				CEAFEF5E19D593D5003FA1CD /* jsonResponseOfAlbumArray.json */,
 				CEAFEF5C19D593AC003FA1CD /* jsonResponseOfPhotoArray.json */,
 				CEAFEF5619D57F04003FA1CD /* jsonResponseOfAlbums.json */,
@@ -230,16 +300,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CEA0E3AF19CAEF1C003D7749 /* PhotoView */ = {
+		CEA0E3AF19CAEF1C003D7749 /* VKPhotoViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				CEA0E3B019CAEF5F003D7749 /* PhotoViewController.h */,
 				CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */,
 			);
-			name = PhotoView;
+			name = VKPhotoViewControllers;
 			sourceTree = "<group>";
 		};
-		CEA17A7E19C980FA00B2F3C8 /* VKAlbumsViewer */ = {
+		CEA17A7E19C980FA00B2F3C8 /* VKAlbumsViewerControllers */ = {
 			isa = PBXGroup;
 			children = (
 				CEA4D15819C6BD9700AC3939 /* VKViewAlbumsTableViewController.h */,
@@ -247,13 +317,12 @@
 				CEA71E7D19C81D7800D86AA8 /* VKCustomAlbumViewCell.h */,
 				CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */,
 				CEA4F47F19D05EC400887D66 /* VKCustomAlbumViewCell.xib */,
-				CEA71E8119C8612700D86AA8 /* VKAlbumModel.h */,
-				CEA71E8219C8612700D86AA8 /* VKAlbumModel.m */,
+				CEA17A8019C9812B00B2F3C8 /* VKPhotoThumbnailViewControllers */,
 			);
-			name = VKAlbumsViewer;
+			name = VKAlbumsViewerControllers;
 			sourceTree = "<group>";
 		};
-		CEA17A8019C9812B00B2F3C8 /* VKPhotoViewer */ = {
+		CEA17A8019C9812B00B2F3C8 /* VKPhotoThumbnailViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				CEA17A7B19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.h */,
@@ -261,21 +330,18 @@
 				CEA17A8519C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib */,
 				CEA17A8A19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.h */,
 				CEA17A8B19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m */,
-				CEA17A8219C9A6DC00B2F3C8 /* VKPhotoModel.h */,
-				CEA17A8319C9A6DC00B2F3C8 /* VKPhotoModel.m */,
+				CEA0E3AF19CAEF1C003D7749 /* VKPhotoViewControllers */,
 			);
-			name = VKPhotoViewer;
+			name = VKPhotoThumbnailViewControllers;
 			sourceTree = "<group>";
 		};
-		CEA186A919D9860200C1A298 /* MapView */ = {
+		CEA186A919D9860200C1A298 /* MapViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				CEA186AA19D986C600C1A298 /* VKPhotoGeoCoordinateViewController.h */,
 				CEA186AB19D986C600C1A298 /* VKPhotoGeoCoordinateViewController.m */,
-				CEA186AD19D987F100C1A298 /* VKPhotoGeoCoordinateModel.h */,
-				CEA186AE19D987F100C1A298 /* VKPhotoGeoCoordinateModel.m */,
 			);
-			name = MapView;
+			name = MapViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,12 +514,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3E0FF319C1C1010012159B /* VKStartScreen.m in Sources */,
+				CE9FDED119DD3D2F00CBBE24 /* VKHelper.m in Sources */,
+				CE3E0FF319C1C1010012159B /* VKStartScreenViewController.m in Sources */,
 				CEA4D15A19C6BD9700AC3939 /* VKViewAlbumsTableViewController.m in Sources */,
 				CEA71E7F19C81D7800D86AA8 /* VKCustomAlbumViewCell.m in Sources */,
 				CEA0E3B219CAEF5F003D7749 /* PhotoViewController.m in Sources */,
 				CE3E0FD219C1C0230012159B /* TestVK.xcdatamodeld in Sources */,
 				CEA186AF19D987F100C1A298 /* VKPhotoGeoCoordinateModel.m in Sources */,
+				CE9FDED419DD571600CBBE24 /* VKChangeRootViewController.m in Sources */,
 				CE3E0FCF19C1C0230012159B /* VKAppDelegate.m in Sources */,
 				CEA186AC19D986C600C1A298 /* VKPhotoGeoCoordinateViewController.m in Sources */,
 				CE9D781F19C32F9C009654F8 /* VKLoader.m in Sources */,

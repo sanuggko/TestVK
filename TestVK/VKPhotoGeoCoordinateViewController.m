@@ -10,7 +10,7 @@
 
 @interface VKPhotoGeoCoordinateViewController ()
 
-@property (nonatomic) NSUInteger index;
+@property (nonatomic) NSUInteger selectedIndex;
 @property (nonatomic, strong) NSMutableArray *annotationArray;
 
 @end
@@ -21,11 +21,9 @@
 {
     [super viewDidLoad];
     self.annotationArray = [[NSMutableArray alloc] init];
-    self.localization.showsUserLocation = YES;
+    self.localization.showsUserLocation = NO;
     
     [self loadCoordinates];
-    //[self.localization addAnnotations:self.annotationArray];
-    
 }
 
 - (void)loadCoordinates
@@ -45,7 +43,6 @@
                animated:(BOOL)animated
 {
     [self.localization addAnnotations:annotations];
-    
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
@@ -55,12 +52,13 @@
     view.rightCalloutAccessoryView = rightButton;
     
     VKPhotoGeoCoordinateModel *annotationObj = view.annotation;
-    UIImageView *thumnailView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
     
-    [thumnailView setImageWithURL:annotationObj.urlOfThumbnail placeholderImage:nil];
-    view.leftCalloutAccessoryView = thumnailView;
-    
-    self.index = annotationObj.index;
+    UIImageView *thumbnailView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 30, 30)];
+    [thumbnailView setImageWithURL:annotationObj.urlOfThumbnail placeholderImage:nil];
+    [thumbnailView setContentMode:UIViewContentModeScaleAspectFit];
+    view.leftCalloutAccessoryView = thumbnailView;
+   
+    self.selectedIndex = annotationObj.index;
 }
 
 - (IBAction)button:(id)sender
@@ -72,7 +70,7 @@
 {
     PhotoViewController* photoViewController = segue.destinationViewController;
     VKPhotoModel *photoModel = [[VKPhotoModel alloc]init];
-    VKPhotoGeoCoordinateModel *geoModel = [self.annotationArray objectAtIndex:self.index];
+    VKPhotoGeoCoordinateModel *geoModel = [self.annotationArray objectAtIndex:self.selectedIndex];
     
     photoModel.urlOfBigPhoto = geoModel.urlOfBigPhoto;
     photoViewController.currentPhoto = photoModel;

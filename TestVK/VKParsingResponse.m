@@ -8,6 +8,11 @@
 
 #import "VKParsingResponse.h"
 
+@interface VKParsingResponse()
+
+
+@end
+
 @implementation VKParsingResponse
 
 + (NSArray *)arrayOfAlbumsFromVKResponse:(VKResponse *)response

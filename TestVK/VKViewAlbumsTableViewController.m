@@ -16,6 +16,9 @@
 #import "VKAlbumModel.h"
 #import "VKPhotoModel.h"
 #import "VKPhotosThrumbnailViewController.h"
+#import "VKStartScreenViewController.h"
+#import "VKHelper.h"
+#import "VKChangeRootViewController.h"
 
 @interface VKViewAlbumsTableViewController ()
 
@@ -87,7 +90,7 @@
 
 - (void)logout:(id) sender {
     [VKSdk forceLogout];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [VKChangeRootViewController changeToLoginViewController];
 }
 
 @end
