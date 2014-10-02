@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface VKViewAlbumsTableViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 

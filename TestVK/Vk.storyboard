@@ -40,6 +40,11 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="yaF-sL-hZu">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <color key="color" red="0.684371014" green="0.090136754309999997" blue="0.11573181759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
                         <connections>
                             <outlet property="dataSource" destination="Gli-Ud-wsg" id="XWq-m1-jlq"/>
                             <outlet property="delegate" destination="Gli-Ud-wsg" id="Ctk-S4-Oew"/>
@@ -48,6 +53,7 @@
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Albums" id="QfI-sB-v9q"/>
                     <connections>
+                        <outlet property="spinner" destination="yaF-sL-hZu" id="Bwv-sd-h0K"/>
                         <segue destination="Kf4-dx-W7x" kind="push" identifier="toPhotoList" id="c2V-fE-gPj"/>
                     </connections>
                 </tableViewController>
@@ -55,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="1883" y="-265"/>
         </scene>
-        <!--Photos Thrumbnail View Controller-->
+        <!--PhotoList-->
         <scene sceneID="BHD-1A-mxV">
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="Kf4-dx-W7x" customClass="VKPhotosThrumbnailViewController" sceneMemberID="viewController">
@@ -75,7 +81,7 @@
                             <outlet property="delegate" destination="Kf4-dx-W7x" id="wvE-jz-x8h"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="fkA-nW-5dY"/>
+                    <navigationItem key="navigationItem" title="PhotoList" id="fkA-nW-5dY"/>
                     <connections>
                         <outlet property="collectionView" destination="Iw9-qa-sCX" id="vtc-v5-YZ7"/>
                         <segue destination="d2C-Du-WPE" kind="push" identifier="toPhotoView" id="NCT-x4-aaR"/>
@@ -152,15 +158,16 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="0.021067394390000001" green="0.095401090250000001" blue="0.1067243304" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="1tp-42-q6f">
+                                        <rect key="frame" x="142" y="232" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="color" red="0.684371014" green="0.090136754309999997" blue="0.11573181759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <connections>
                                     <outlet property="delegate" destination="d2C-Du-WPE" id="zwc-kc-Xlu"/>
                                 </connections>
                             </scrollView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="by4-55-Bgr">
-                                <rect key="frame" x="141" y="266" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -170,7 +177,7 @@
                     <connections>
                         <outlet property="photoView" destination="zhj-5p-zRW" id="BNH-gK-EFZ"/>
                         <outlet property="scrollView" destination="ZUo-4f-xKG" id="Zam-rK-aPq"/>
-                        <outlet property="spinner" destination="by4-55-Bgr" id="enJ-Yf-OQL"/>
+                        <outlet property="spinner" destination="1tp-42-q6f" id="Ttp-uL-DjG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LR-le-96j" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -244,6 +251,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="F7u-l3-YZr"/>
+        <segue reference="NCT-x4-aaR"/>
     </inferredMetricsTieBreakers>
 </document>

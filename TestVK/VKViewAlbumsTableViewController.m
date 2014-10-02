@@ -50,6 +50,7 @@
     [VKLoader loadAlbumsWithSuccessBlock:^(NSArray *albums)
     {
         [self.albumsNameArray addObjectsFromArray:albums];
+        [self.spinner stopAnimating];
         [self.tableView reloadData];
     }
                                  failure:^(NSError *error)

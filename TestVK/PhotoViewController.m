@@ -20,10 +20,9 @@
 {
     [super viewDidLoad];
     NSURL* url = self.currentPhoto.urlOfBigPhoto;
-    [self.photoView setImageWithURL:url];
     [self.scrollView setMaximumZoomScale:3.0f];
     [self.scrollView setClipsToBounds:YES];
-    [self.spinner stopAnimating];
+    [self setImageWithURL:url];
 }
 
 - (void)setImageWithURL:(NSURL *) url
@@ -33,7 +32,9 @@
                           placeholderImage:nil
                                    success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
     {
+        [self.spinner stopAnimating];
         self.photoView.image = image;
+        
     }
                                    failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error)
     {
