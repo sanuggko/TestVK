@@ -17,6 +17,7 @@
     if (self)
     {
         self.urlOfSmallPhoto = [NSURL URLWithString:[temp valueForKey:@"photo_130"]];
+        
         if ([NSURL URLWithString:[temp valueForKey:@"photo_807"]])
         {
             self.urlOfBigPhoto = [NSURL URLWithString:[temp valueForKey:@"photo_807"]];

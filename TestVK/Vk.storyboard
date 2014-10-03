@@ -75,6 +75,11 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <activityIndicatorView key="backgroundView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" id="a13-w6-grx">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="color" red="0.77941645408163263" green="0.047672770571688769" blue="0.081021120913972386" alpha="1" colorSpace="calibratedRGB"/>
+                        </activityIndicatorView>
                         <cells/>
                         <connections>
                             <outlet property="dataSource" destination="Kf4-dx-W7x" id="7ls-DC-hsi"/>
@@ -84,6 +89,7 @@
                     <navigationItem key="navigationItem" title="PhotoList" id="fkA-nW-5dY"/>
                     <connections>
                         <outlet property="collectionView" destination="Iw9-qa-sCX" id="vtc-v5-YZ7"/>
+                        <outlet property="spinner" destination="a13-w6-grx" id="j21-NR-ZOs"/>
                         <segue destination="d2C-Du-WPE" kind="push" identifier="toPhotoView" id="NCT-x4-aaR"/>
                     </connections>
                 </collectionViewController>

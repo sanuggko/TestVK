@@ -13,5 +13,6 @@
 
 @property (nonatomic, strong) VKAlbumModel *currentAlbum;
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 
 @end

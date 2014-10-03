@@ -63,7 +63,7 @@ static NSString *const VK_API_NEED_COVERS    = @"need_covers";
                                      andHttpMethod:@"GET"];
     
     [req executeWithResultBlock:^(VKResponse *response) {
-       
+        
     success([VKParsingResponse arrayOfPhotosFromVKResponse:response andAlbumId:idOfAlbum]);
         
     } errorBlock:^(NSError *error) {

@@ -36,6 +36,7 @@
     [VKLoader loadPhotosWithIdOfAlbum:albumId andWithSuccessBlock:^(NSArray *urlsOfPhotos)
     {
         [self.arrayOfPhotosUrls addObjectsFromArray:urlsOfPhotos];
+        [self.spinner stopAnimating];
         [self.collectionView reloadData];
     }
                               failure:^(NSError *error)

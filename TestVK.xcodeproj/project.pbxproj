@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8F3DD6B12E3F4197BCDA199C /* libPods-TestVK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E7011BA2A0A4DA58F5EA301 /* libPods-TestVK.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		CE1A6C8F19DD9BDB00787378 /* Vk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1A6C8E19DD9BDB00787378 /* Vk.storyboard */; };
 		CE3E0FC919C1C0230012159B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE3E0FC719C1C0230012159B /* InfoPlist.strings */; };
 		CE3E0FCB19C1C0230012159B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FCA19C1C0230012159B /* main.m */; };
 		CE3E0FCF19C1C0230012159B /* VKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3E0FCE19C1C0230012159B /* VKAppDelegate.m */; };
@@ -20,7 +21,6 @@
 		CE9FDED119DD3D2F00CBBE24 /* VKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FDED019DD3D2F00CBBE24 /* VKHelper.m */; };
 		CE9FDED419DD571600CBBE24 /* VKChangeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9FDED319DD571600CBBE24 /* VKChangeRootViewController.m */; };
 		CEA0E3B219CAEF5F003D7749 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */; };
-		CEA0E3B619CAFCD3003D7749 /* Vk.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */; };
 		CEA17A7D19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A7C19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m */; };
 		CEA17A8419C9A6DC00B2F3C8 /* VKPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA17A8319C9A6DC00B2F3C8 /* VKPhotoModel.m */; };
 		CEA17A8619C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA17A8519C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib */; };
@@ -61,6 +61,7 @@
 		9E7011BA2A0A4DA58F5EA301 /* libPods-TestVK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestVK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F06594FE13E472EADA3E0C7 /* Pods-TestVKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestVKTests.xcconfig"; path = "Pods/Pods-TestVKTests.xcconfig"; sourceTree = "<group>"; };
 		B1C1FE17BE8D4F9F887BFC27 /* libPods-TestVKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestVKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1A6C8E19DD9BDB00787378 /* Vk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Vk.storyboard; sourceTree = "<group>"; };
 		CE3E0FB919C1C0230012159B /* TestVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3E0FC619C1C0230012159B /* TestVK-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestVK-Info.plist"; sourceTree = "<group>"; };
 		CE3E0FC819C1C0230012159B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		CE9FDED319DD571600CBBE24 /* VKChangeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKChangeRootViewController.m; sourceTree = "<group>"; };
 		CEA0E3B019CAEF5F003D7749 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		CEA0E3B119CAEF5F003D7749 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
-		CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Vk.storyboard; sourceTree = "<group>"; };
 		CEA17A7B19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPhotosThrumbnailViewController.h; sourceTree = "<group>"; };
 		CEA17A7C19C97ED100B2F3C8 /* VKPhotosThrumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPhotosThrumbnailViewController.m; sourceTree = "<group>"; };
 		CEA17A8219C9A6DC00B2F3C8 /* VKPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKPhotoModel.h; sourceTree = "<group>"; };
@@ -263,8 +263,8 @@
 			isa = PBXGroup;
 			children = (
 				CE3E0FD019C1C0230012159B /* TestVK.xcdatamodeld */,
+				CE1A6C8E19DD9BDB00787378 /* Vk.storyboard */,
 				CE3E0FD319C1C0230012159B /* Images.xcassets */,
-				CEA0E3B519CAFCD3003D7749 /* Vk.storyboard */,
 				CE3E0FC619C1C0230012159B /* TestVK-Info.plist */,
 				CE3E0FC719C1C0230012159B /* InfoPlist.strings */,
 				CE3E0FCA19C1C0230012159B /* main.m */,
@@ -426,9 +426,9 @@
 			files = (
 				CEA4F48019D05EC400887D66 /* VKCustomAlbumViewCell.xib in Resources */,
 				CE3E0FC919C1C0230012159B /* InfoPlist.strings in Resources */,
+				CE1A6C8F19DD9BDB00787378 /* Vk.storyboard in Resources */,
 				CE3E0FD419C1C0230012159B /* Images.xcassets in Resources */,
 				CEA17A8619C9C1DD00B2F3C8 /* VKCustomPhotoThumbnailViewCell.xib in Resources */,
-				CEA0E3B619CAFCD3003D7749 /* Vk.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
