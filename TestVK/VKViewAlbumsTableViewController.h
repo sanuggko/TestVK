@@ -10,7 +10,9 @@
 
 @interface VKViewAlbumsTableViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
-
+@property (nonatomic, strong) NSMutableArray *arrayOfAllAlbumsIDs;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+
+- (NSMutableArray *) recArrayOfAllAlbumsIDs;
 
 @end

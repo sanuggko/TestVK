@@ -7,6 +7,7 @@
 //
 
 #import "VKHelper.h"
+#import "VKAlbumModel.h"
 
 @interface VKHelper() <VKSdkDelegate>
 

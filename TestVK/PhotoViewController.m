@@ -8,7 +8,8 @@
 
 #import "PhotoViewController.h"
 #import "UIKit+AFNetworking.h"
-
+#import "VKChangeRootViewController.h"
+#import "VKSdk.h"
 
 @interface PhotoViewController ()
 
@@ -19,6 +20,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
+                                                                              style:UIBarButtonItemStyleDone
+                                                                             target:self
+                                                                             action:@selector(logout:)];
+    
     NSURL* url = self.currentPhoto.urlOfBigPhoto;
     [self.scrollView setMaximumZoomScale:3.0f];
     [self.scrollView setClipsToBounds:YES];
@@ -46,6 +52,11 @@
 - (UIView *) viewForZoomingInScrollView:(UIScrollView *)scrollView
 {
     return self.photoView;
+}
+
+- (void)logout:(id) sender {
+    [VKSdk forceLogout];
+    [VKChangeRootViewController changeToLoginViewController];
 }
 
 @end

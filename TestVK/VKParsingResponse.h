@@ -17,7 +17,7 @@
 
 + (NSArray *)arrayOfAlbumsFromVKResponse:(VKResponse *)response;
 
-+ (NSArray *)arrayOfPhotosFromVKResponse:(VKResponse *)response andAlbumId:(NSInteger) idOfAlbum;
++ (NSArray *)arrayOfPhotosFromVKResponse:(VKResponse *)response;
 
 + (NSArray *)arrayOfPhotoGeoCoordinateFromVKresponse:(VKResponse *)response;
 

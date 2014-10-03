@@ -28,8 +28,7 @@
     return albums;
 }
 
-+ (NSArray *)arrayOfPhotosFromVKResponse:(VKResponse *)response andAlbumId:(NSInteger) idOfAlbum
-{
++ (NSArray *)arrayOfPhotosFromVKResponse:(VKResponse *)response {
     NSMutableArray* photoAlbum = [[NSMutableArray alloc]init];
     NSDictionary* dic = response.json;
     
@@ -37,10 +36,7 @@
     for (int i =0; i < [items count]; i++) {
         NSDictionary* temp = items[i];
         VKPhotoModel* vkPhoto = [[VKPhotoModel alloc]initWithProperties:temp];
-        NSInteger idAlbum = [[temp valueForKey:@"album_id"] intValue];
-        if (idOfAlbum == idAlbum) {
-            [photoAlbum addObject:vkPhoto];
-        }
+        [photoAlbum addObject:vkPhoto];
     }
     return photoAlbum;
 }

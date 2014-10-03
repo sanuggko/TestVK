@@ -19,6 +19,7 @@
 #import "VKStartScreenViewController.h"
 #import "VKHelper.h"
 #import "VKChangeRootViewController.h"
+#import "VKReceiveAllAlbumID.h"
 
 @interface VKViewAlbumsTableViewController ()
 
@@ -37,6 +38,7 @@
                                                                             target:self
                                                                             action:@selector(logout:)];
     self.albumsNameArray = [[NSMutableArray alloc] init];
+    self.arrayOfAllAlbumsIDs = [[NSMutableArray alloc]init];
     
     UINib * nib = [UINib nibWithNibName:NSStringFromClass([VKCustomAlbumViewCell class])
                                  bundle:nil];
@@ -50,6 +52,7 @@
     [VKLoader loadAlbumsWithSuccessBlock:^(NSArray *albums)
     {
         [self.albumsNameArray addObjectsFromArray:albums];
+        [self.arrayOfAllAlbumsIDs addObjectsFromArray:[VKReceiveAllAlbumID loadArraysOfAlbumIds:self.albumsNameArray]];
         [self.spinner stopAnimating];
         [self.tableView reloadData];
     }
@@ -57,6 +60,10 @@
     {
         NSLog(@"Error in loadAlbums");
     }];
+}
+- (NSMutableArray *) recArrayOfAllAlbumsIDs
+{
+    return self.arrayOfAllAlbumsIDs;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

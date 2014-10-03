@@ -21,6 +21,9 @@
 static NSString *const VK_API_NEED_SYSTEM          = @"need_system";
 static NSString *const VK_API_NO_SERVICE_ALBUMS    = @"no_service_albums";
 static NSString *const VK_API_NEED_COVERS    = @"need_covers";
+static NSInteger const wall = -7;
+static NSInteger const saved = -15;
+static NSInteger const profile = -6;
 
 + (void)loadAlbumsWithSuccessBlock:(void (^)(NSArray *))success
                           failure:(void (^)(NSError *))failure
@@ -43,42 +46,50 @@ static NSString *const VK_API_NEED_COVERS    = @"need_covers";
 
 + (void)loadPhotosWithIdOfAlbum:(NSInteger) idOfAlbum andWithSuccessBlock:(void (^) (NSArray *)) success failure:(void (^) (NSError *)) failure
 {
-    if (idOfAlbum == (-15))
+    VKRequest *request = [[VKRequest alloc]init];
+    
+    if (idOfAlbum == saved)
     {
-        VKRequest *req  = [VKRequest requestWithMethod:@"photos.get"
+        request = [VKRequest requestWithMethod:@"photos.get"
                                          andParameters:@{VK_API_ALBUM_ID:@"saved"}
                                          andHttpMethod:@"GET"];
-        [req executeWithResultBlock:^(VKResponse *response) {
-            success([VKParsingResponse arrayOfPhotosFromVKResponse:response andAlbumId:idOfAlbum]);
+    }
+    else if (idOfAlbum == wall)
+    {
+        request  = [VKRequest requestWithMethod:@"photos.get"
+                                             andParameters:@{VK_API_ALBUM_ID:@"wall"}
+                                             andHttpMethod:@"GET"];
+    }
+    else if (idOfAlbum == profile)
+    {
+        request  = [VKRequest requestWithMethod:@"photos.get"
+                                             andParameters:@{VK_API_ALBUM_ID:@"profile"}
+                                             andHttpMethod:@"GET"];
+    }
+    else
+    {
+        NSString *idOfAlbumStr = [NSString stringWithFormat: @"%d", (int) idOfAlbum];
+        
+        request = [VKRequest requestWithMethod:@"photos.get"
+                                             andParameters:@{VK_API_ALBUM_ID:idOfAlbumStr}
+                                             andHttpMethod:@"GET"];
+    }
+        
+        [request executeWithResultBlock:^(VKResponse *response) {
+            success([VKParsingResponse arrayOfPhotosFromVKResponse:response]);
             
         } errorBlock:^(NSError *error) {
             if(failure){
                 failure(error);
             }
         }];
-    } else{
-    
-    VKRequest *req  = [VKRequest requestWithMethod:@"photos.getAll"
-                                     andParameters:@{VK_API_NO_SERVICE_ALBUMS:@0, VK_API_COUNT:@200}
-                                     andHttpMethod:@"GET"];
-    
-    [req executeWithResultBlock:^(VKResponse *response) {
-        
-    success([VKParsingResponse arrayOfPhotosFromVKResponse:response andAlbumId:idOfAlbum]);
-        
-    } errorBlock:^(NSError *error) {
-        if(failure){
-            failure(error);
-        }
-    }];
-    }
 }
 
 + (void)loadPhotoCoordinateWithSuccessBlock:(void(^)(NSArray *array))success
                                     failure:(void(^)(NSError *error))failure
 {
-    VKRequest *req  = [VKRequest requestWithMethod:@"photos.getAll"
-                                     andParameters:@{VK_API_NO_SERVICE_ALBUMS:@0, VK_API_COUNT:@200}
+    VKRequest *req  = [VKRequest requestWithMethod:@"photos.get"
+                                     andParameters:nil
                                      andHttpMethod:@"GET"];
     
     [req executeWithResultBlock:^(VKResponse *response) {

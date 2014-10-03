@@ -13,6 +13,7 @@
 #import "VKPhotoGeoCoordinateModel.h"
 #import "PhotoViewController.h"
 #import "VKPhotoModel.h"
+#import "VKViewAlbumsTableViewController.h"
 
 @interface VKPhotoGeoCoordinateViewController : UIViewController <MKMapViewDelegate>
 

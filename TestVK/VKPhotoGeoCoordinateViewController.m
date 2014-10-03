@@ -7,12 +7,13 @@
 //
 
 #import "VKPhotoGeoCoordinateViewController.h"
+#import "VKChangeRootViewController.h"
 
 @interface VKPhotoGeoCoordinateViewController ()
 
 @property (nonatomic) NSUInteger selectedIndex;
 @property (nonatomic, strong) NSMutableArray *annotationArray;
-
+@property (nonatomic, strong) NSMutableArray *arrayOfAlbumsIDs;
 @end
 
 @implementation VKPhotoGeoCoordinateViewController
@@ -20,6 +21,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
+                                                                              style:UIBarButtonItemStyleDone
+                                                                             target:self
+                                                                             action:@selector(logout:)];
+    
+    VKViewAlbumsTableViewController *albumVC = [[VKViewAlbumsTableViewController alloc]init];
+    
+    self.arrayOfAlbumsIDs = [[NSMutableArray alloc] init];
+    
     self.annotationArray = [[NSMutableArray alloc] init];
     self.localization.showsUserLocation = NO;
     
@@ -76,4 +86,8 @@
     photoViewController.currentPhoto = photoModel;
 }
 
+- (void)logout:(id) sender {
+    [VKSdk forceLogout];
+    [VKChangeRootViewController changeToLoginViewController];
+}
 @end

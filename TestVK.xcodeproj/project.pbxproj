@@ -29,6 +29,7 @@
 		CEA186AF19D987F100C1A298 /* VKPhotoGeoCoordinateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA186AE19D987F100C1A298 /* VKPhotoGeoCoordinateModel.m */; };
 		CEA186B119D9941000C1A298 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA186B019D9941000C1A298 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CEA186B319D9988C00C1A298 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA186B219D9988C00C1A298 /* CoreLocation.framework */; };
+		CEA2B93C19DED62B00960B68 /* VKReceiveAllAlbumID.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA2B93B19DED62B00960B68 /* VKReceiveAllAlbumID.m */; };
 		CEA4D15A19C6BD9700AC3939 /* VKViewAlbumsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA4D15919C6BD9700AC3939 /* VKViewAlbumsTableViewController.m */; };
 		CEA4F48019D05EC400887D66 /* VKCustomAlbumViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEA4F47F19D05EC400887D66 /* VKCustomAlbumViewCell.xib */; };
 		CEA71E7F19C81D7800D86AA8 /* VKCustomAlbumViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA71E7E19C81D7800D86AA8 /* VKCustomAlbumViewCell.m */; };
@@ -99,6 +100,8 @@
 		CEA186AE19D987F100C1A298 /* VKPhotoGeoCoordinateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKPhotoGeoCoordinateModel.m; sourceTree = "<group>"; };
 		CEA186B019D9941000C1A298 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CEA186B219D9988C00C1A298 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CEA2B93A19DED62B00960B68 /* VKReceiveAllAlbumID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKReceiveAllAlbumID.h; sourceTree = "<group>"; };
+		CEA2B93B19DED62B00960B68 /* VKReceiveAllAlbumID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKReceiveAllAlbumID.m; sourceTree = "<group>"; };
 		CEA4D15819C6BD9700AC3939 /* VKViewAlbumsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VKViewAlbumsTableViewController.h; sourceTree = "<group>"; };
 		CEA4D15919C6BD9700AC3939 /* VKViewAlbumsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VKViewAlbumsTableViewController.m; sourceTree = "<group>"; };
 		CEA4F47F19D05EC400887D66 /* VKCustomAlbumViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VKCustomAlbumViewCell.xib; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				CE9FDECF19DD3D2F00CBBE24 /* VKHelper.h */,
 				CE9FDED219DD571600CBBE24 /* VKChangeRootViewController.h */,
 				CE9FDED319DD571600CBBE24 /* VKChangeRootViewController.m */,
+				CEA2B93A19DED62B00960B68 /* VKReceiveAllAlbumID.h */,
+				CEA2B93B19DED62B00960B68 /* VKReceiveAllAlbumID.m */,
 				CE9D781D19C32F9C009654F8 /* VKLoader.h */,
 				CE9D781E19C32F9C009654F8 /* VKLoader.m */,
 				CEAFEF6219D5A02E003FA1CD /* VKParsingResponse.h */,
@@ -530,6 +535,7 @@
 				CE3E0FCB19C1C0230012159B /* main.m in Sources */,
 				CEA17A8419C9A6DC00B2F3C8 /* VKPhotoModel.m in Sources */,
 				CE9F013619D4223900085557 /* DTFixtureLoader.m in Sources */,
+				CEA2B93C19DED62B00960B68 /* VKReceiveAllAlbumID.m in Sources */,
 				CEAFEF6419D5A02E003FA1CD /* VKParsingResponse.m in Sources */,
 				CEA17A8C19C9C2C800B2F3C8 /* VKCustomPhotoThumbnailViewCell.m in Sources */,
 			);

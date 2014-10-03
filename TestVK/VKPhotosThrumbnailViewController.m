@@ -11,6 +11,7 @@
 #import "VKCustomPhotoThumbnailViewCell.h"
 #import "VKLoader.h"
 #import "PhotoViewController.h"
+#import "VKChangeRootViewController.h"
 
 @interface VKPhotosThrumbnailViewController ()
 
@@ -23,6 +24,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout"
+                                                                             style:UIBarButtonItemStyleDone
+                                                                            target:self
+                                                                            action:@selector(logout:)];
+    
     UINib* nib = [UINib nibWithNibName:NSStringFromClass([VKCustomPhotoThumbnailViewCell class]) bundle:nil];
     [self.collectionView registerNib:nib
           forCellWithReuseIdentifier:NSStringFromClass([VKCustomPhotoThumbnailViewCell class])];
@@ -74,6 +80,11 @@
     PhotoViewController* photoViewController = segue.destinationViewController;
     NSIndexPath* selectedCell = [[self.collectionView indexPathsForSelectedItems] firstObject];
     photoViewController.currentPhoto = [self.arrayOfPhotosUrls objectAtIndex:selectedCell.item];
+}
+
+- (void)logout:(id) sender {
+    [VKSdk forceLogout];
+    [VKChangeRootViewController changeToLoginViewController];
 }
 
 @end
